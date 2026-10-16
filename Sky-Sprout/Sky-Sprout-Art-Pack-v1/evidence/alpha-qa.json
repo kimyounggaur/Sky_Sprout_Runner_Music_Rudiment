@@ -1,0 +1,135 @@
+[
+  {
+    "id": "sprout-idle",
+    "width": 256,
+    "height": 256,
+    "transparentPercent": 60.7,
+    "edgePixelsAbove16": 0
+  },
+  {
+    "id": "sprout-run-a",
+    "width": 256,
+    "height": 256,
+    "transparentPercent": 60.2,
+    "edgePixelsAbove16": 0
+  },
+  {
+    "id": "sprout-run-b",
+    "width": 256,
+    "height": 256,
+    "transparentPercent": 57.3,
+    "edgePixelsAbove16": 0
+  },
+  {
+    "id": "sprout-jump",
+    "width": 256,
+    "height": 256,
+    "transparentPercent": 61.9,
+    "edgePixelsAbove16": 0
+  },
+  {
+    "id": "sprout-fall",
+    "width": 256,
+    "height": 256,
+    "transparentPercent": 62.3,
+    "edgePixelsAbove16": 0
+  },
+  {
+    "id": "sprout-land",
+    "width": 256,
+    "height": 256,
+    "transparentPercent": 49.7,
+    "edgePixelsAbove16": 0
+  },
+  {
+    "id": "platform-meadow",
+    "width": 960,
+    "height": 448,
+    "transparentPercent": 39,
+    "edgePixelsAbove16": 0
+  },
+  {
+    "id": "platform-cloud",
+    "width": 512,
+    "height": 288,
+    "transparentPercent": 34.7,
+    "edgePixelsAbove16": 0
+  },
+  {
+    "id": "tile-meadow",
+    "width": 256,
+    "height": 256,
+    "transparentPercent": 30.4,
+    "edgePixelsAbove16": 0
+  },
+  {
+    "id": "tile-rune",
+    "width": 256,
+    "height": 256,
+    "transparentPercent": 23.6,
+    "edgePixelsAbove16": 0
+  },
+  {
+    "id": "light-seed",
+    "width": 256,
+    "height": 256,
+    "transparentPercent": 58.1,
+    "edgePixelsAbove16": 0
+  },
+  {
+    "id": "drift-bug",
+    "width": 256,
+    "height": 256,
+    "transparentPercent": 45.9,
+    "edgePixelsAbove16": 0
+  },
+  {
+    "id": "thorn-pod",
+    "width": 256,
+    "height": 256,
+    "transparentPercent": 55.8,
+    "edgePixelsAbove16": 0
+  },
+  {
+    "id": "breeze-orb",
+    "width": 256,
+    "height": 256,
+    "transparentPercent": 35.5,
+    "edgePixelsAbove16": 0
+  },
+  {
+    "id": "growth-bud",
+    "width": 256,
+    "height": 256,
+    "transparentPercent": 53.3,
+    "edgePixelsAbove16": 0
+  },
+  {
+    "id": "checkpoint-lantern",
+    "width": 256,
+    "height": 256,
+    "transparentPercent": 58.7,
+    "edgePixelsAbove16": 0
+  },
+  {
+    "id": "background-sky",
+    "width": 1536,
+    "height": 1024,
+    "transparentPercent": 0,
+    "edgePixelsAbove16": 5116
+  },
+  {
+    "id": "background-islands",
+    "width": 1536,
+    "height": 1024,
+    "transparentPercent": 68,
+    "edgePixelsAbove16": 0
+  },
+  {
+    "id": "sprout-keyposes-strip",
+    "width": 1536,
+    "height": 256,
+    "transparentPercent": 58.7,
+    "edgePixelsAbove16": 0
+  }
+]

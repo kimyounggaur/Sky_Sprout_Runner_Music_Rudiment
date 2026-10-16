@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "candidate": "sky-sprout-music-local-2026-10-17",
+  "createdAt": "2026-10-17T00:37:54.2923007+09:00",
+  "packageVersion": "0.1.0",
+  "publication": "local only",
+  "design": "스카이러너_음악이론_재즈화성학_VIBE코딩_프롬프트팩_v1.0.md",
+  "separateV2Design": "not present in provided workspace",
+  "gitRepository": false,
+  "content": {
+    "review": "Scoped examples, not complete expert-reviewed courses",
+    "playableModules": 74,
+    "catalogModules": 76,
+    "activities": 103,
+    "deferredModules": [
+      "X07",
+      "X08"
+    ]
+  },
+  "verification": {
+    "acceptance": {
+      "automated_pass": 35,
+      "partial": 32,
+      "not_run": 0,
+      "deferred": 0
+    },
+    "e2eReport": "final-e2e.json",
+    "build": "npm run build: passed",
+    "lint": "npm run lint: passed; reference art/demo and generated artifacts excluded",
+    "unit": {
+      "report": "final-unit.json",
+      "failed": 0,
+      "passed": 268
+    },
+    "e2e": {
+      "startTime": "2026-10-16T15:36:41.365Z",
+      "duration": 42042.607,
+      "expected": 36,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "packageSmoke": "Loopback Node server HTML and PNG HTTP200 with correct MIME; production C completed by real DOM inputs; no browser errors observed",
+    "assets": {
+      "count": 19,
+      "allSourceHashesMatch": true
+    },
+    "acceptanceReport": "acceptance-audit.json"
+  },
+  "defaults": {
+    "sound": "explicit gesture only",
+    "externalApi": "none",
+    "storage": "browser-local, last200 attempts",
+    "safeInput": "available",
+    "musicReward": "1 per stable activity/profile/reward epoch",
+    "mode": "guided",
+    "solfege": "fixed_do"
+  },
+  "limitations": [
+    "Actual iOS/Android, assistive technology and acoustic latency are not certified.",
+    "Advanced jazz and creative examples need expert and learner review.",
+    "Active Story HP/position/checkpoint/timer restoration across music-room entry is not implemented; music runs from a separate menu route.",
+    "X07 hardware input and X08 culture-specific professional material are deferred.",
+    "Long-term low-end-device p95/p99 and all movement combinations are not verified.",
+    "Rights for public redistribution of user-provided art are not independently established."
+  ],
+  "rollback": {
+    "sourceBaseline": "output/baseline",
+    "featureOff": "/?music=off or VITE_MUSIC_ENABLED=false",
+    "policy": "Export music records and levels first; restore only this task changes after comparison; do not clear all localStorage; keep music JSON before older-app resave."
+  },
+  "evidence": [
+    "change-manifest.json",
+    "asset-provenance.json",
+    "build-manifest.json",
+    "final-unit.json",
+    "final-e2e.json",
+    "acceptance-audit.json"
+  ]
+}

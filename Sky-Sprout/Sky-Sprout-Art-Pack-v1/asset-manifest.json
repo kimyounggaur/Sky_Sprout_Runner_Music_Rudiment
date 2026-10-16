@@ -1,0 +1,552 @@
+{
+  "version": "1.0",
+  "scope": "Representative scene asset study; not deployed",
+  "assets": [
+    {
+      "id": "sprout-idle",
+      "file": "assets/raster/sprout-idle.png",
+      "width": 256,
+      "height": 256,
+      "alpha": true,
+      "role": "주인공 idle",
+      "anchor": [
+        0.5,
+        0.953125
+      ],
+      "sourceCrop": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "visibleSourceBounds": [
+        50,
+        41,
+        433,
+        482
+      ]
+    },
+    {
+      "id": "sprout-run-a",
+      "file": "assets/raster/sprout-run-a.png",
+      "width": 256,
+      "height": 256,
+      "alpha": true,
+      "role": "주인공 run-a",
+      "anchor": [
+        0.5,
+        0.953125
+      ],
+      "sourceCrop": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "visibleSourceBounds": [
+        21,
+        46,
+        439,
+        480
+      ]
+    },
+    {
+      "id": "sprout-run-b",
+      "file": "assets/raster/sprout-run-b.png",
+      "width": 256,
+      "height": 256,
+      "alpha": true,
+      "role": "주인공 run-b",
+      "anchor": [
+        0.5,
+        0.953125
+      ],
+      "sourceCrop": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "visibleSourceBounds": [
+        22,
+        61,
+        428,
+        480
+      ]
+    },
+    {
+      "id": "sprout-jump",
+      "file": "assets/raster/sprout-jump.png",
+      "width": 256,
+      "height": 256,
+      "alpha": true,
+      "role": "주인공 jump",
+      "anchor": [
+        0.5,
+        0.953125
+      ],
+      "sourceCrop": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "visibleSourceBounds": [
+        55,
+        6,
+        488,
+        408
+      ]
+    },
+    {
+      "id": "sprout-fall",
+      "file": "assets/raster/sprout-fall.png",
+      "width": 256,
+      "height": 256,
+      "alpha": true,
+      "role": "주인공 fall",
+      "anchor": [
+        0.5,
+        0.953125
+      ],
+      "sourceCrop": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "visibleSourceBounds": [
+        77,
+        6,
+        440,
+        456
+      ]
+    },
+    {
+      "id": "sprout-land",
+      "file": "assets/raster/sprout-land.png",
+      "width": 256,
+      "height": 256,
+      "alpha": true,
+      "role": "주인공 land",
+      "anchor": [
+        0.5,
+        0.953125
+      ],
+      "sourceCrop": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "visibleSourceBounds": [
+        45,
+        33,
+        457,
+        446
+      ]
+    },
+    {
+      "id": "platform-meadow",
+      "file": "assets/raster/platform-meadow.png",
+      "width": 960,
+      "height": 448,
+      "alpha": true,
+      "role": "풀섬 고정 발판",
+      "anchor": [
+        0.5,
+        0.16
+      ],
+      "sourceCrop": [
+        0,
+        0,
+        960,
+        510
+      ],
+      "visibleSourceBounds": [
+        38,
+        78,
+        952,
+        460
+      ]
+    },
+    {
+      "id": "platform-cloud",
+      "file": "assets/raster/platform-cloud.png",
+      "width": 512,
+      "height": 288,
+      "alpha": true,
+      "role": "구름 이동 발판",
+      "anchor": [
+        0.5,
+        0.14
+      ],
+      "sourceCrop": [
+        965,
+        0,
+        571,
+        510
+      ],
+      "visibleSourceBounds": [
+        11,
+        157,
+        533,
+        424
+      ]
+    },
+    {
+      "id": "tile-meadow",
+      "file": "assets/raster/tile-meadow.png",
+      "width": 256,
+      "height": 256,
+      "alpha": true,
+      "role": "독립 반복 블록",
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "sourceCrop": [
+        0,
+        512,
+        768,
+        512
+      ],
+      "visibleSourceBounds": [
+        246,
+        13,
+        669,
+        419
+      ]
+    },
+    {
+      "id": "tile-rune",
+      "file": "assets/raster/tile-rune.png",
+      "width": 256,
+      "height": 256,
+      "alpha": true,
+      "role": "씨앗 룬 블록",
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "sourceCrop": [
+        768,
+        512,
+        768,
+        512
+      ],
+      "visibleSourceBounds": [
+        173,
+        43,
+        562,
+        419
+      ]
+    },
+    {
+      "id": "light-seed",
+      "file": "assets/raster/light-seed.png",
+      "width": 256,
+      "height": 256,
+      "alpha": true,
+      "role": "수집물",
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "sourceCrop": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "visibleSourceBounds": [
+        121,
+        54,
+        434,
+        477
+      ]
+    },
+    {
+      "id": "drift-bug",
+      "file": "assets/raster/drift-bug.png",
+      "width": 256,
+      "height": 256,
+      "alpha": true,
+      "role": "적",
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "sourceCrop": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "visibleSourceBounds": [
+        37,
+        112,
+        458,
+        471
+      ]
+    },
+    {
+      "id": "thorn-pod",
+      "file": "assets/raster/thorn-pod.png",
+      "width": 256,
+      "height": 256,
+      "alpha": true,
+      "role": "장애물",
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "sourceCrop": [
+        1024,
+        0,
+        512,
+        498
+      ],
+      "visibleSourceBounds": [
+        27,
+        30,
+        451,
+        494
+      ]
+    },
+    {
+      "id": "breeze-orb",
+      "file": "assets/raster/breeze-orb.png",
+      "width": 256,
+      "height": 256,
+      "alpha": true,
+      "role": "바람 능력",
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "sourceCrop": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "visibleSourceBounds": [
+        88,
+        43,
+        476,
+        428
+      ]
+    },
+    {
+      "id": "growth-bud",
+      "file": "assets/raster/growth-bud.png",
+      "width": 256,
+      "height": 256,
+      "alpha": true,
+      "role": "성장 아이템",
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "sourceCrop": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "visibleSourceBounds": [
+        69,
+        15,
+        447,
+        451
+      ]
+    },
+    {
+      "id": "checkpoint-lantern",
+      "file": "assets/raster/checkpoint-lantern.png",
+      "width": 256,
+      "height": 256,
+      "alpha": true,
+      "role": "체크포인트",
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "sourceCrop": [
+        1024,
+        498,
+        512,
+        526
+      ],
+      "visibleSourceBounds": [
+        53,
+        2,
+        427,
+        481
+      ]
+    },
+    {
+      "id": "background-sky",
+      "file": "assets/raster/background-sky.png",
+      "width": 1536,
+      "height": 1024,
+      "alpha": false,
+      "role": "먼 하늘",
+      "scrollFactor": 0.06
+    },
+    {
+      "id": "background-islands",
+      "file": "assets/raster/background-islands.png",
+      "width": 1536,
+      "height": 1024,
+      "alpha": true,
+      "role": "중경 패럴랙스",
+      "scrollFactor": 0.22
+    },
+    {
+      "id": "sprout-keyposes-strip",
+      "file": "assets/raster/sprout-keyposes-strip.png",
+      "width": 1536,
+      "height": 256,
+      "alpha": true,
+      "role": "256×256 6프레임 키포즈 시트",
+      "frames": [
+        "idle",
+        "run-a",
+        "run-b",
+        "jump",
+        "fall",
+        "land"
+      ]
+    },
+    {
+      "id": "health-leaf",
+      "file": "assets/svg/health-leaf.svg",
+      "width": 48,
+      "height": 48,
+      "alpha": true,
+      "role": "체력"
+    },
+    {
+      "id": "seed-icon",
+      "file": "assets/svg/seed-icon.svg",
+      "width": 48,
+      "height": 48,
+      "alpha": true,
+      "role": "HUD 씨앗"
+    },
+    {
+      "id": "pause",
+      "file": "assets/svg/pause.svg",
+      "width": 48,
+      "height": 48,
+      "alpha": true,
+      "role": "일시정지"
+    },
+    {
+      "id": "arrow-right",
+      "file": "assets/svg/arrow-right.svg",
+      "width": 48,
+      "height": 48,
+      "alpha": true,
+      "role": "이동"
+    },
+    {
+      "id": "jump",
+      "file": "assets/svg/jump.svg",
+      "width": 48,
+      "height": 48,
+      "alpha": true,
+      "role": "점프"
+    },
+    {
+      "id": "run",
+      "file": "assets/svg/run.svg",
+      "width": 48,
+      "height": 48,
+      "alpha": true,
+      "role": "달리기"
+    },
+    {
+      "id": "restart",
+      "file": "assets/svg/restart.svg",
+      "width": 48,
+      "height": 48,
+      "alpha": true,
+      "role": "재시도"
+    },
+    {
+      "id": "sound",
+      "file": "assets/svg/sound.svg",
+      "width": 48,
+      "height": 48,
+      "alpha": true,
+      "role": "오디오"
+    },
+    {
+      "id": "check",
+      "file": "assets/svg/check.svg",
+      "width": 48,
+      "height": 48,
+      "alpha": true,
+      "role": "완료"
+    },
+    {
+      "id": "button-primary",
+      "file": "assets/svg/button-primary.svg",
+      "width": 320,
+      "height": 88,
+      "alpha": true,
+      "role": "텍스트 없는 기본 버튼 9-slice"
+    },
+    {
+      "id": "button-secondary",
+      "file": "assets/svg/button-secondary.svg",
+      "width": 320,
+      "height": 88,
+      "alpha": true,
+      "role": "텍스트 없는 보조 버튼"
+    },
+    {
+      "id": "hud-pill",
+      "file": "assets/svg/hud-pill.svg",
+      "width": 320,
+      "height": 88,
+      "alpha": true,
+      "role": "HUD 9-slice 배경"
+    },
+    {
+      "id": "fx-collect",
+      "file": "assets/svg/fx-collect.svg",
+      "width": 192,
+      "height": 192,
+      "alpha": true,
+      "role": "수집 순간 방사형 이펙트"
+    },
+    {
+      "id": "fx-land",
+      "file": "assets/svg/fx-land.svg",
+      "width": 240,
+      "height": 96,
+      "alpha": true,
+      "role": "착지 먼지"
+    },
+    {
+      "id": "fx-wind",
+      "file": "assets/svg/fx-wind.svg",
+      "width": 256,
+      "height": 96,
+      "alpha": true,
+      "role": "바람 궤적"
+    },
+    {
+      "id": "fx-hurt",
+      "file": "assets/svg/fx-hurt.svg",
+      "width": 192,
+      "height": 192,
+      "alpha": true,
+      "role": "피격 플래시"
+    }
+  ]
+}

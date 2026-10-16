@@ -1,0 +1,24 @@
+{
+  "errors": [],
+  "screenSizes": [
+    [
+      1440,
+      1100
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      844,
+      390
+    ]
+  ],
+  "verified": [
+    "18 raster images loaded",
+    "collect 8→9",
+    "pause/resume",
+    "start/result view",
+    "portrait no horizontal overflow"
+  ]
+}

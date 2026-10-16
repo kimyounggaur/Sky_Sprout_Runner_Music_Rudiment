@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "gitRepository": false,
+  "baseline": "output/baseline",
+  "existingFiles": [
+    {
+      "file": "eslint.config.js",
+      "baselineSha256": "F526BC69A8B784D12EDCC3FBFEE4817C8331002D2E8EB1E587D62A9B8EFE092B",
+      "currentSha256": "17F67264A3CB239194ED3BEF641645033D0C59B481E3E176BC4DA299198F6E5C",
+      "changed": true
+    },
+    {
+      "file": "index.html",
+      "baselineSha256": "1D24EBA7429D49FEA07586594764CE7D28F9BD181EA66A40A07AE1270CCE7D34",
+      "currentSha256": "C799CF82F7509F24E5D3F0F734DCD3EC337D43C67E9F552603AAA125209BAC32",
+      "changed": true
+    },
+    {
+      "file": "README.md",
+      "baselineSha256": "83B029274F7A04EA261C050F4E5AD11ADF5587792D6C6EF0D20D026356990E0C",
+      "currentSha256": "45932B9A2B367A299A4450EEBA53D04F42B58C502FA77B0D35736862CBE9F802",
+      "changed": true
+    },
+    {
+      "file": "src/App.tsx",
+      "baselineSha256": "593CAE30C61E9FF43B4E741C464AD720712D9412BC1FB4E11E690F1CEDF45816",
+      "currentSha256": "36C00733C7AF6BDE0AD8B8C4EDD701C393C53BA75A4191EB8110BD47A3FCEEDB",
+      "changed": true
+    },
+    {
+      "file": "src/main.tsx",
+      "baselineSha256": "DE1DADA0CF04CBC75116CB85CB3A9888455DC60E0486F17981B7D084AC05DFC7",
+      "currentSha256": "DE1DADA0CF04CBC75116CB85CB3A9888455DC60E0486F17981B7D084AC05DFC7",
+      "changed": false
+    },
+    {
+      "file": "src/components/GameCanvas.tsx",
+      "baselineSha256": "7745E16BD5150586328C9952D1E0AB4C508A2937904DC8EC6E08D1DA8F19A193",
+      "currentSha256": "7745E16BD5150586328C9952D1E0AB4C508A2937904DC8EC6E08D1DA8F19A193",
+      "changed": false
+    },
+    {
+      "file": "src/editor/EditorRoot.tsx",
+      "baselineSha256": "D976E93CDBD379B5A034EA31AE0D8E1C75A0D256AE6B6EB4F12EC42999BC76AD",
+      "currentSha256": "81A5AB63143F91174A2D97028694BAF6C2008318B86BC7C7279633CB587E8F2D",
+      "changed": true
+    },
+    {
+      "file": "src/editor/components/EditorShell.tsx",
+      "baselineSha256": "F866B24F743624B9BBEA60215ACC7F367B43B55B3920E4DDA56FBDED2725046E",
+      "currentSha256": "820D11513A0F2A91F22E75D4EF85DA58E0538104FF7EA4AA5870BBC980635252",
+      "changed": true
+    },
+    {
+      "file": "src/editor/components/EditorToolbar.tsx",
+      "baselineSha256": "654078196F0CA0D44886EDA6B68F856DA95DE37777706FB1CEEAF01AEBF51C2F",
+      "currentSha256": "0A9369988B97A75FABFDCBEA0D604E8012406055D063C93C2AF5609BBBF53A3F",
+      "changed": true
+    },
+    {
+      "file": "src/editor/schemas/levelMigrations.ts",
+      "baselineSha256": "64288AD820C27DB64CBA0F9CF7354BF15C1F2F08584B749F94B2F633697DF023",
+      "currentSha256": "44E4E41BDE46F7EB718E0579E3303D9EA37A33583F59D188EB91BD15A45ABE53",
+      "changed": true
+    },
+    {
+      "file": "src/editor/systems/EditorValidationSystem.ts",
+      "baselineSha256": "8356CFCC8A1FE29543C7156E83927F95392138AB07AFA49352E888C2E3606A41",
+      "currentSha256": "19495994E70143607BB2249E599C9A7B874617A3D4C660DE708E14E920A5B733",
+      "changed": true
+    },
+    {
+      "file": "src/game/types.ts",
+      "baselineSha256": "D7F750B9B5F2396AE92014475667E656DD6024D112A92BA0B0027AEEC712BA4E",
+      "currentSha256": "13BFA4611AFF4304ED21408FC174DCC193C8AD6FCBCEB7308AA006FEBFA7A4A5",
+      "changed": true
+    },
+    {
+      "file": "src/game/data/LevelData.ts",
+      "baselineSha256": "A9014DA2D01D03E335698C71B8DB2D9D9DB41D000315114C89C73887B3DB6365",
+      "currentSha256": "F684500397E85A2209455E4230D62B497FA28C711E3AE063075126823F530BD4",
+      "changed": true
+    },
+    {
+      "file": "src/styles/global.css",
+      "baselineSha256": "DF6DA4F3FC94BA747DA06E8C5874B2FC83BF5F540ECD8DA983C8F1A3CBA89EDD",
+      "currentSha256": "E36007DA969D8B2163DB07F01128F029C11DDC372A132B6F04FD5C8009AA6727",
+      "changed": true
+    }
+  ],
+  "newMusicFiles": [
+    {
+      "file": "src/components/MusicApp.tsx",
+      "sha256": "98A443675DB2330C38BC0A534FBFFE21B265742BE45E91AC91D675B80BEB10E6",
+      "bytes": 13720
+    },
+    {
+      "file": "src/components/MusicEvidence.css",
+      "sha256": "57F5563142CC2D608B4197E465BC6BEF983D2DEC13E4AE6E8FB9F57DB95F6390",
+      "bytes": 2052
+    },
+    {
+      "file": "src/components/MusicEvidenceReport.tsx",
+      "sha256": "66F069D2FC35C90A8D0BD3BC7F8426DB602E5DB055947724499C895BFAB1C714",
+      "bytes": 4856
+    },
+    {
+      "file": "src/components/MusicNotation.tsx",
+      "sha256": "05C4D1468D65393E70038EEB47C9640F0A496E90B7E959AB51361A4A6A29BABF",
+      "bytes": 1727
+    },
+    {
+      "file": "src/components/MusicPractice.tsx",
+      "sha256": "8CB24F517B442E197454C3C94B1963286E530216AADE73E3065480F0679AB952",
+      "bytes": 17358
+    },
+    {
+      "file": "src/components/MusicPracticeSupport.tsx",
+      "sha256": "2F6142626BB77F384CE93D2429C4C16EDC6CB78BB3E5BC45711A7238E7B27708",
+      "bytes": 3736
+    },
+    {
+      "file": "src/components/MusicRhythmPad.tsx",
+      "sha256": "C561C3200763701CE5DA5F9FACA51DA9EFD7EBEE7D0322157DFF14DC799E30E1",
+      "bytes": 14039
+    },
+    {
+      "file": "src/components/MusicWorld.css",
+      "sha256": "F6FE0F5CA24030FE9435C7B98259503A9AD72BEB70C45C5C1213F34CD477C815",
+      "bytes": 2567
+    },
+    {
+      "file": "src/components/MusicWorld.tsx",
+      "sha256": "823E1A218E3A1A9AA602EAB12B2079286047068EF0008048D5B2CF59AF89DCE0",
+      "bytes": 7490
+    },
+    {
+      "file": "src/editor/components/MusicEditor.tsx",
+      "sha256": "E9D5331840926A0E9E36DA296078459527AB59300F08B4EC6A068C586948137D",
+      "bytes": 13563
+    },
+    {
+      "file": "src/game/music/audio.ts",
+      "sha256": "1B6F20F06FB09D2ECFBAC8C32F741CA93B6E8175747F1A4273A106A046A0FE72",
+      "bytes": 6872
+    },
+    {
+      "file": "src/game/music/contactEpisodes.ts",
+      "sha256": "DE10D2745CD2B72D828E865C2BC521F4A5361CB9FA75115E6CACF7659F642DD1",
+      "bytes": 1737
+    },
+    {
+      "file": "src/game/music/contentValidation.ts",
+      "sha256": "35B17C84B66F01FCFDEF0E9E75234F9CA08050385E5A29F47E3C7C583610C044",
+      "bytes": 24042
+    },
+    {
+      "file": "src/game/music/curriculum.ts",
+      "sha256": "0C75D95394C8931AB99EF9DEE3C50D43F3D69EF2F9E043DFAF813F7C19AF498B",
+      "bytes": 68040
+    },
+    {
+      "file": "src/game/music/domain.ts",
+      "sha256": "2A221B4D7E2D77E9B87E17239467020FAA891CD4DE0FB5D4EE7AEA5197CA72DE",
+      "bytes": 26374
+    },
+    {
+      "file": "src/game/music/evidence.ts",
+      "sha256": "73B7621EB894876F988154BE4D0961B9107714092EDEBCC048FC1DDA78EDEF6F",
+      "bytes": 5562
+    },
+    {
+      "file": "src/game/music/feature.ts",
+      "sha256": "E96B2DF579BA8C42569A93DE4E02C4DF4063C5C2A82D150D2F08880A083E398A",
+      "bytes": 402
+    },
+    {
+      "file": "src/game/music/lessonPackage.ts",
+      "sha256": "C8168633A84173E3B409FE1F270671D50F486C1697CBED7FF0667E617E587987",
+      "bytes": 3832
+    },
+    {
+      "file": "src/game/music/MusicWorldScene.ts",
+      "sha256": "8E5D7124712EAD0B04C3EACCF89AA5F55AF9A4F0CC4612A27F577C8F21BAC879",
+      "bytes": 17019
+    },
+    {
+      "file": "src/game/music/persistence.ts",
+      "sha256": "939ADD4A9007AA8ED5C3AD701E8CE70261ECAF12411FE2B61A2C2D900867B2C6",
+      "bytes": 9520
+    },
+    {
+      "file": "src/game/music/session.ts",
+      "sha256": "8329B8071260F3CA3FA73989E7C0E5A0A13D9952B28A2777712A4EFC4671C231",
+      "bytes": 14923
+    },
+    {
+      "file": "src/game/music/timing.ts",
+      "sha256": "D55C4F69DA5F3804FF7F1898FD85304341E5B733E4EC866F3A2A49C84F9C1898",
+      "bytes": 7524
+    },
+    {
+      "file": "src/styles/music.css",
+      "sha256": "67AFC343DC88D5F59E060B2CD01487F8DC6DD20CA31DAFB87324DA08F416317C",
+      "bytes": 18181
+    },
+    {
+      "file": "src/vite-env.d.ts",
+      "sha256": "65996936FBB042915F7B74A200FCDDE7E410F32A669B1AB9597CFAA4B0FADDB5",
+      "bytes": 38
+    },
+    {
+      "file": "tests/e2e/music-accessibility.spec.ts",
+      "sha256": "0BD0374CFD63CC13561FEFDC03CDD81B3680C0A9C928A87C949812F9A2C34B60",
+      "bytes": 7077
+    },
+    {
+      "file": "tests/e2e/music-contracts.spec.ts",
+      "sha256": "E5B8C24C5043010568D8749116922ABC92D283F15D29030AB05B07FF3E2F52C7",
+      "bytes": 4325
+    },
+    {
+      "file": "tests/e2e/music-curriculum.spec.ts",
+      "sha256": "37C2FB7EEAC6D93D02623DCBABD1C9326516C403CF8845799E33384F1FDEDDE1",
+      "bytes": 10070
+    },
+    {
+      "file": "tests/e2e/music-editor.spec.ts",
+      "sha256": "43FBC4C9215E04CB534DE7124E45F2EFED99F69114BEC1EAED7A7054DFFE3236",
+      "bytes": 3479
+    },
+    {
+      "file": "tests/e2e/music-evidence.spec.ts",
+      "sha256": "A9726DF7F932BF2BCE904903D640D0086CD062E8F0A6D2635693C9AD683B1B6D",
+      "bytes": 8872
+    },
+    {
+      "file": "tests/e2e/music-learning.spec.ts",
+      "sha256": "3C79993F492C2F68A252B423C43144880729340B20212FCBBB391F77165F82E5",
+      "bytes": 4059
+    },
+    {
+      "file": "tests/e2e/music-lifecycle.spec.ts",
+      "sha256": "F1DA136C8BA39100950023D1F1FDB279DF425B6174A7E7F9B64F800C9A1E4228",
+      "bytes": 1526
+    },
+    {
+      "file": "tests/e2e/music-timing.spec.ts",
+      "sha256": "13EDFF3ED6600F9C1DFB0BB7896E13209B60094F3DAF80485ACD0FFD4954719E",
+      "bytes": 5609
+    },
+    {
+      "file": "tests/e2e/music-world.spec.ts",
+      "sha256": "29FD55F16BA5766510F42716054E0F4D8EB7B68F2A491A01A2C35B21965B29E3",
+      "bytes": 14038
+    },
+    {
+      "file": "tests/unit/musicAudio.test.ts",
+      "sha256": "17E145E0BAB38B15BCF04341ECCC6193E81C955425F56943F1C933B4CE5B32F2",
+      "bytes": 1754
+    },
+    {
+      "file": "tests/unit/musicContactEpisodes.test.ts",
+      "sha256": "61718F0BF4A4441400D86A2FC55E1CE79340E78337284492FB9B7827660116D1",
+      "bytes": 2130
+    },
+    {
+      "file": "tests/unit/musicContent.test.ts",
+      "sha256": "9D52827ABF352E8AF2F780B95A7B0FB350FA7C8AD9826AF409736D6C5F3CDB57",
+      "bytes": 15898
+    },
+    {
+      "file": "tests/unit/musicEditorIntegration.test.ts",
+      "sha256": "6DEB1086187C0D389922C70C9BDDDF4D455444F51AE645E119E19290EB22F679",
+      "bytes": 8369
+    },
+    {
+      "file": "tests/unit/musicEngine.test.ts",
+      "sha256": "E8C3593FC903D3817AF5B7DBCC717EC5C2FB8CA45FF7E3FFBA385E4B3BE016BD",
+      "bytes": 17652
+    },
+    {
+      "file": "tests/unit/musicEvidence.test.ts",
+      "sha256": "505171982D78A63AA84E22A824F6809BA407A5936B371A2A51649F2832A5A050",
+      "bytes": 9554
+    },
+    {
+      "file": "tests/unit/musicTeachingContract.test.ts",
+      "sha256": "D2697700F0D75926614CE406A9E468497F00002190F6162AF34890D25406F8B9",
+      "bytes": 2180
+    },
+    {
+      "file": "tests/unit/musicTiming.test.ts",
+      "sha256": "A6C8FD31FCB643647372C7125286605C6FA7E96CAF96469F091D2CA9831708C3",
+      "bytes": 6990
+    }
+  ],
+  "assets": "asset-provenance.json"
+}

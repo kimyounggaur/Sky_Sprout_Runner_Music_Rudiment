@@ -1,0 +1,36 @@
+# Dependencies and generated builds
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Playwright and local browser state
+.playwright-cli/
+playwright-report/
+test-results/
+test-results-*/
+
+# Local logs, caches, and environment secrets
+*.log
+.env
+.env.*
+!.env.example
+
+# Local release bundles, screenshots, and baseline copies
+output/*
+!output/verification/
+output/verification/*
+!output/verification/*.json
+!output/verification/*.ps1
+output/verification/package-manifest.json
+output/verification/package-integrity.json
+
+# Unused legacy reference artwork from the earlier prototype
+01 Source/
+
+# Duplicate split deliveries; the canonical Sky-Sprout-Art-Pack-v1 remains tracked
+Sky-Sprout/Sky-Sprout-01-Assets-Preview-Guides/
+Sky-Sprout/Sky-Sprout-02-Original-Art-Sources/
+Sky-Sprout/Sky-Sprout-03-Comparisons-QA/
+
+# Superseded one-off diagnostic; final reports remain tracked
+output/verification/reachability-diagnostic.json

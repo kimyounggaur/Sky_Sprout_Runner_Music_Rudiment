@@ -1,0 +1,21 @@
+.music-world{position:relative;overflow:hidden;border:1px solid #c9ded4;border-radius:22px;background:#f9fcf1;box-shadow:0 12px 32px #174b5010;color:#174b50}
+.music-world-topline{display:flex;justify-content:space-between;gap:10px;padding:12px 18px;font-size:13px;font-weight:700;background:#fffef5}
+.music-world-topline span:last-child{color:#4f7567;font-weight:500}
+.music-world-stage{position:relative;outline:none}
+.music-world-stage:focus-visible{outline:4px solid #1a6d77;outline-offset:-4px}
+.music-world-canvas{height:440px;width:100%;overflow:hidden;touch-action:pan-y}
+.music-world-canvas canvas{display:block!important;margin:0!important;max-width:100%;touch-action:pan-y}
+.music-world-paused{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center;background:#eff8edd9;font-size:20px;font-weight:700;backdrop-filter:blur(3px)}
+.music-world-controls{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 18px max(12px,env(safe-area-inset-bottom));background:#fffef5;border-top:1px solid #dde8dc}
+.music-direction-controls{display:flex;gap:8px}
+.music-world-controls button{min-height:48px;min-width:48px;font:inherit;cursor:pointer;border:1px solid #bdd5c0;border-radius:14px;color:#174b50;background:#edf4e6;touch-action:none;user-select:none}
+.music-world-controls button:active{background:#d5e8c9;transform:translateY(1px)}
+.music-world-controls button:disabled{opacity:.5;cursor:default}
+.music-world-controls button:focus-visible{outline:3px solid #116d7e;outline-offset:3px}
+.music-world-controls .music-move{font-size:25px;font-weight:700;min-width:58px}
+.music-world-controls .music-jump{background:#ffd66c;border-color:#c6a64e;min-width:96px;font-size:17px;min-height:54px}
+.music-world-controls .music-return{padding:0 12px;font-size:13px;background:#fffdf4}
+.music-world-instructions,.music-world-status{margin:0;padding:0 18px 10px;font-size:12px;line-height:1.6;color:#4e6b60;background:#fffef5}
+.music-world-status{padding-bottom:14px}
+@media(max-width:600px){.music-world{border-radius:17px}.music-world-canvas{height:440px}.music-world-topline{padding:12px;font-size:11px}.music-world-controls{padding:10px;gap:7px}.music-world-controls .music-move{min-width:48px}.music-world-controls .music-jump{min-width:79px}.music-world-controls .music-return{font-size:11px;padding:0 8px}.music-world-instructions,.music-world-status{padding-left:12px;padding-right:12px}}
+@media(prefers-reduced-motion:reduce){.music-world-controls button:active{transform:none}}

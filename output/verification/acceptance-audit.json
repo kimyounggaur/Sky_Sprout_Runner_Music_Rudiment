@@ -1,0 +1,1358 @@
+{
+  "schemaVersion": 1,
+  "auditDate": "2026-10-17",
+  "timezone": "Asia/Seoul",
+  "sourceDocument": "스카이러너_음악이론_재즈화성학_VIBE코딩_프롬프트팩_v1.0.md",
+  "sourceSection": "9: U01–U67",
+  "scope": "Current local implementation and observed final production/unit runs. This audit maps all 67 requirements; it is not a full-release, WCAG, acoustic, or pedagogy certification.",
+  "statusDefinitions": {
+    "automated_pass": "Requirement covered by executed automated evidence in the stated supported scope; limits remain explicit.",
+    "partial": "Implemented/verified portions exist, but the complete specified scenario or all required behavior is not established.",
+    "not_run": "Required inspection scenario was not executed; supporting code alone is not a pass.",
+    "deferred": "Requested capability is not implemented/supported in this local scope."
+  },
+  "evidenceRegistry": {
+    "world-e2e": {
+      "file": "tests/e2e/music-world.spec.ts",
+      "result": "6 tests included in final production run (36 expected passes, 0 unexpected, 0 flaky)",
+      "rawReport": "output/verification/final-e2e.json"
+    },
+    "engine-unit": {
+      "file": "tests/unit/musicEngine.test.ts",
+      "result": "37/37 passed in final 268/268 unit run",
+      "rawReport": "output/verification/final-unit.json"
+    },
+    "content-unit": {
+      "file": "tests/unit/musicContent.test.ts",
+      "result": "127/127 passed in final 268/268 unit run",
+      "rawReport": "output/verification/final-unit.json"
+    },
+    "audio-unit": {
+      "file": "tests/unit/musicAudio.test.ts",
+      "result": "8/8 passed in final 268/268 unit run",
+      "rawReport": "output/verification/final-unit.json"
+    },
+    "editor-unit": {
+      "file": "tests/unit/musicEditorIntegration.test.ts",
+      "result": "18/18 passed in final 268/268 unit run",
+      "rawReport": "output/verification/final-unit.json"
+    },
+    "contact-unit": {
+      "file": "tests/unit/musicContactEpisodes.test.ts",
+      "result": "4/4 passed in final 268/268 unit run",
+      "rawReport": "output/verification/final-unit.json"
+    },
+    "unitRawReport": "output/verification/final-unit.json",
+    "accessibility-e2e": {
+      "file": "tests/e2e/music-accessibility.spec.ts",
+      "result": "3 tests included in final production run (36 expected passes, 0 unexpected, 0 flaky)",
+      "rawReport": "output/verification/final-e2e.json"
+    },
+    "learning-e2e": {
+      "file": "tests/e2e/music-learning.spec.ts",
+      "result": "3 tests included in final production run (36 expected passes, 0 unexpected, 0 flaky)",
+      "rawReport": "output/verification/final-e2e.json"
+    },
+    "contracts-e2e": {
+      "file": "tests/e2e/music-contracts.spec.ts",
+      "result": "3 tests included in final production run (36 expected passes, 0 unexpected, 0 flaky)",
+      "rawReport": "output/verification/final-e2e.json"
+    },
+    "lifecycle-e2e": {
+      "file": "tests/e2e/music-lifecycle.spec.ts",
+      "result": "1 tests included in final production run (36 expected passes, 0 unexpected, 0 flaky)",
+      "rawReport": "output/verification/final-e2e.json"
+    },
+    "timing-unit": {
+      "file": "tests/unit/musicTiming.test.ts",
+      "result": "14/14 passed in final 268/268 unit run",
+      "rawReport": "output/verification/final-unit.json"
+    },
+    "evidence-unit": {
+      "file": "tests/unit/musicEvidence.test.ts",
+      "result": "12/12 passed in final 268/268 unit run",
+      "rawReport": "output/verification/final-unit.json"
+    },
+    "evidence-e2e": {
+      "file": "tests/e2e/music-evidence.spec.ts",
+      "result": "4 tests included in final production run (36 expected passes, 0 unexpected, 0 flaky)",
+      "rawReport": "output/verification/final-e2e.json"
+    },
+    "timing-e2e": {
+      "file": "tests/e2e/music-timing.spec.ts",
+      "result": "2 tests included in final production run (36 expected passes, 0 unexpected, 0 flaky)",
+      "rawReport": "output/verification/final-e2e.json"
+    },
+    "editor-e2e": {
+      "file": "tests/e2e/music-editor.spec.ts",
+      "result": "2 tests included in final production run (36 expected passes, 0 unexpected, 0 flaky)",
+      "rawReport": "output/verification/final-e2e.json"
+    },
+    "curriculum-e2e": {
+      "file": "tests/e2e/music-curriculum.spec.ts",
+      "result": "8 tests included in final production run (36 expected passes, 0 unexpected, 0 flaky)",
+      "rawReport": "output/verification/final-e2e.json"
+    }
+  },
+  "summary": {
+    "automated_pass": 35,
+    "partial": 32,
+    "not_run": 0,
+    "deferred": 0
+  },
+  "releaseConclusion": "All 67 IDs are accounted for. Automated pass is limited to each stated supported scenario. Partial items must not be described as full compliance. Expert pedagogy review, real device/audio/accessibility evaluation, ongoing Story state restoration, and long-term statistical performance remain unverified or outside the implemented scope.",
+  "entries": [
+    {
+      "id": "U01",
+      "stage": "S06",
+      "requirement": "C4→E4→G4의 3단계, 완료·보상 각 1회, 구성음 순서 안내로 기록",
+      "status": "automated_pass",
+      "evidence": [
+        "world-e2e: physical head contacts / safe C and F sequences",
+        "engine-unit: deduplicates event IDs; preserves C progress",
+        "src/game/music/session.ts: getRecord/applyEvaluation"
+      ],
+      "limits": "Chromium과 로컬 원장 범위이다. 교육 효과나 청음·리듬 숙달을 검증한 것이 아니다.",
+      "relatedMT": [
+        "MT-F02"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "원본 C에서 C4,E4,G4를 유효 타격",
+      "sourceExpectedResult": "정확히 3단계 진행, 완료·코인 지급 각 1회. 결과는 구성음 순서 안내 완료이며 청음·리듬 숙달 아님",
+      "sourceLine": 2468
+    },
+    {
+      "id": "U02",
+      "stage": "S06",
+      "requirement": "F4→A4→C5 정답과 C4 정확 음높이 반례",
+      "status": "partial",
+      "evidence": [
+        "world-e2e: safe C and F sequences includes MIDI60 rejection after65,69",
+        "engine-unit: rejects C4 in the exact F4 A4 C5 exercise",
+        "content-unit: MT-F02 keeps C4=60 and final C5=72"
+      ],
+      "limits": "F의 정답·옥타브 반례는 안전 선택 UI와 도메인에서 실행했다. F 전체를 실제 머리 타격으로 완주한 별도 E2E는 없다.",
+      "relatedMT": [
+        "MT-F02"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "원본 F에서 F4,A4,C5 타격 후 C4 데이터를 대신 삽입하는 반례 검사",
+      "sourceExpectedResult": "C5가 정답. C4는 정확 음높이 규칙상 불일치. “도는 같으므로 무조건 정답” 처리하지 않음",
+      "sourceLine": 2469
+    },
+    {
+      "id": "U03",
+      "stage": "S04/S06",
+      "requirement": "C 정답 후 낙하·옆면·지나침을 음악 오답과 분리하고 진행 유지",
+      "status": "partial",
+      "evidence": [
+        "world-e2e: actual cliff fall preserves accepted C, health and reports exactly one fall",
+        "world-e2e: accepted C + keyboard side collision held 0.5s counts once, separation/recontact counts twice; persisted invalidEvents=2, motorEvents=0, conditionMismatches=0",
+        "contact-unit: tied contacts recorded once per separation",
+        "src/components/MusicPractice.tsx: onInteraction forwards fall/invalid_contact/ambiguous_contact to session"
+      ],
+      "limits": "낙하·옆면 접촉·수동 복귀의 구분은 실제 브라우저에서 확인했다. 위 착지·모호 접촉은 물리 필터/단위 검사 범위이며, 단순 지나침은 의도를 추측할 수 없어 별도 오답·운동 실패로 기록하지 않는다. 원문의 모든 접촉 상황 전체 E2E는 아니다.",
+      "relatedMT": [
+        "MT-F02"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "C4 정답 후 낙하·옆면 접촉·블록 지나침 반복",
+      "sourceExpectedResult": "nextIndex와 시도 유지. 각각 운동·무효 접촉으로 기록하며 음악 오답 횟수를 증가시키지 않음",
+      "sourceLine": 2470
+    },
+    {
+      "id": "U04",
+      "stage": "S04/S08",
+      "requirement": "의도와 실제 타격을 구분하고 개념 부족을 단정하지 않음",
+      "status": "partial",
+      "evidence": [
+        "src/game/music/domain.ts: neutral task mismatch and chord-tone feedback",
+        "src/components/MusicPractice.tsx: same-rule safe selection"
+      ],
+      "limits": "안전 선택 경로와 중립 문구는 있다. 학생 의도 진술 후 다른 블록 타격을 확인하는 실사용 시나리오는 실행하지 않았다.",
+      "relatedMT": [
+        "MT-F02"
+      ],
+      "priority": "중요",
+      "sourceInitialCondition": "학생은 C4를 의도했다고 말하지만 실제로 E4 밑면을 타격",
+      "sourceExpectedResult": "시스템은 다른 블록 타격 사실만 확정. 음악 개념 부족으로 단정하지 않고 안전 선택 확인 가능",
+      "sourceLine": 2471
+    },
+    {
+      "id": "U05",
+      "stage": "S08",
+      "requirement": "안전 선택도 동일 판정·완료 보상, 운동 방식으로 감점하지 않음",
+      "status": "automated_pass",
+      "evidence": [
+        "engine-unit: safe selection and platform selection share exact knowledge contract",
+        "world-e2e: safe C/F exact-once rewards"
+      ],
+      "limits": "안전 선택 결과는 supportsUsed/inputMode로 구분되며 별도의 운동 감점은 없다.",
+      "relatedMT": [
+        "MT-F02"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "동일 지식 과제를 안전 선택 모드로 완료",
+      "sourceExpectedResult": "동일 음악 판정 규칙과 완료 보상 사용. 점프가 없다는 이유로 학습 응답 미인정·자동 감점하지 않음",
+      "sourceLine": 2472
+    },
+    {
+      "id": "U06",
+      "stage": "S03/S05",
+      "requirement": "정답 안내 활동을 무힌트 숙달로 자동 합치지 않고 지원 기록 보존",
+      "status": "automated_pass",
+      "evidence": [
+        "engine-unit: preserves C progress record contains next_target_visible",
+        "engine-unit: fixes content and notation snapshots; supports actually used",
+        "src/game/music/session.ts: supportsUsed/environmentValidity/getRecord"
+      ],
+      "limits": "현재 기록은 조건 충족과 사용한 도움을 저장한다. 별도의 장기 숙달 추론 기능은 구현하지 않는다.",
+      "relatedMT": [
+        "MT-F02"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "다음 목표가 항상 보이는 안내 활동을 모두 완료",
+      "sourceExpectedResult": "“힌트 없이 확인” 항목은 자동 완료되지 않음. 결과에 정답 안내 사용 표시",
+      "sourceLine": 2473
+    },
+    {
+      "id": "U07",
+      "stage": "S08",
+      "requirement": "위치만 바꾼 별도 확인과 원본 안내 결과를 분리",
+      "status": "automated_pass",
+      "evidence": [
+        "evidence-e2e: original C completed after actual fall; reordered C transfer hides target and next-note, retains G/C/E choice order and C/E/G answer order",
+        "evidence-e2e: original and transfer reports separate with target-exposure and safe-input records",
+        "evidence-unit: C and F transfers preserve notes/theory and force hidden practice"
+      ],
+      "limits": "C는 실제 UI와 보고서, F는 데이터/세션 단위 검사 범위다. 위치 변경 지정 순서 성공을 청음·화성 기능·장기 숙달로 확대하지 않는다.",
+      "relatedMT": [
+        "MT-F24"
+      ],
+      "priority": "중요",
+      "sourceInitialCondition": "안내 후 블록 위치만 바꾼 별도 확인 실시",
+      "sourceExpectedResult": "위치 변경과 이론 변경을 동시에 하지 않음. 새 응답 결과를 원본 안내 결과와 별도로 표시",
+      "sourceLine": 2474
+    },
+    {
+      "id": "U08",
+      "stage": "S08",
+      "requirement": "음명 연결만 성공했을 때 청음·독보·화성은 미측정으로 유지",
+      "status": "partial",
+      "evidence": [
+        "src/game/music/curriculum.ts: distinct assessmentDomain values",
+        "src/components/MusicEvidenceReport.tsx and src/game/music/evidence.ts: observed domain and explicit unmeasured listening/instrument/timing/mastery labels",
+        "evidence-e2e: original and transfer records preserve narrow result and unmeasured list"
+      ],
+      "limits": "대표 보고서의 관찰 범위와 미측정 목록은 확인했다. 음명 연결 성공 사례에서 독보·화성 기능을 각각 명시하는 전체 영역 평가 행렬/전용 E2E는 없다.",
+      "relatedMT": [
+        "MT-F01",
+        "MT-F24"
+      ],
+      "priority": "중요",
+      "sourceInitialCondition": "명칭 찾기만 성공하고 소리 구별 활동은 하지 않음",
+      "sourceExpectedResult": "음명 연결 관찰만 표시. 청음·악보 읽기·화성 기능은 미측정",
+      "sourceLine": 2475
+    },
+    {
+      "id": "U09",
+      "stage": "S09",
+      "requirement": "순서 자유 음집합 C4,G4,E4를 허용",
+      "status": "automated_pass",
+      "evidence": [
+        "engine-unit: accepts reordered collections",
+        "content-unit: MT-F13/F15 accepts collection permutations",
+        "src/game/music/domain.ts: pitch_collection matching"
+      ],
+      "limits": "선언된 pitch_collection 범위의 판정이다. 자유로운 모든 보이싱 해석을 보장하지 않는다.",
+      "relatedMT": [
+        "MT-F13",
+        "MT-F15"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "음집합 과제에서 C4,G4,E4를 선택해 확정",
+      "sourceExpectedResult": "순서 자유 조건이면 통과. 원본 순서 모드의 배열 비교를 그대로 재사용해 실패시키지 않음",
+      "sourceLine": 2476
+    },
+    {
+      "id": "U10",
+      "stage": "S09",
+      "requirement": "옥타브 허용과 정확 음역 과제의 C4/C5 대체를 다르게 판단하고 설명",
+      "status": "partial",
+      "evidence": [
+        "engine-unit: exact vs pitch_class substitution",
+        "content-unit: F13/F15 voicings",
+        "src/game/music/domain.ts: equality-specific samePitch"
+      ],
+      "limits": "판정 차이는 자동 검사했다. 두 정책을 화면에서 비교하고 음역 불일치를 구체적으로 설명하는 전체 UI 검사는 없다.",
+      "relatedMT": [
+        "MT-F13",
+        "MT-F15"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "옥타브 허용 과제와 정확 보이싱 과제에 C4/C5 대체 답 제출",
+      "sourceExpectedResult": "앞 과제에서는 허용, 뒤 과제에서는 해당 음역 규칙대로 판단. 화면에 차이를 설명",
+      "sourceLine": 2477
+    },
+    {
+      "id": "U11",
+      "stage": "S08",
+      "requirement": "C♯/D♭ 같은 소리라도 요구 철자·음정 문맥 구별",
+      "status": "automated_pass",
+      "evidence": [
+        "engine-unit: reordered collections test includes C# vs Db spelling rejection",
+        "content-unit: MT-F08 spelling and MT-F09 letter distances"
+      ],
+      "limits": "철자/음정 도메인 검증이다. 모든 음악 기호 글꼴과 보조기기 발화를 검증하지 않았다.",
+      "relatedMT": [
+        "MT-F08",
+        "MT-F09"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "철자 학습에서 C♯과 D♭의 동일 소리 답을 비교",
+      "sourceExpectedResult": "요구한 철자·음정 문맥에 따라 구분. 소리 일치만으로 철자 정답 처리하지 않음",
+      "sourceLine": 2478
+    },
+    {
+      "id": "U12",
+      "stage": "S09",
+      "requirement": "전위는 클릭 순서가 아니라 실제 최저음으로 판단",
+      "status": "automated_pass",
+      "evidence": [
+        "engine-unit: actual lowest sounding note as bass regardless of click order",
+        "content-unit: MT-F13/F15 actual E-bass voicings"
+      ],
+      "limits": "정적 선택 음높이의 실제 베이스 판정이며 라이브 악기 입력 추적은 아니다.",
+      "relatedMT": [
+        "MT-F15"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "전위 문제에서 E4를 먼저 누른 뒤 C4,E4,G4를 완성",
+      "sourceExpectedResult": "입력 순서가 아니라 최종 실제 최저음 C4로 기본위치 판단",
+      "sourceLine": 2479
+    },
+    {
+      "id": "U13",
+      "stage": "S06",
+      "requirement": "C→G→E→G에서 진행 보존, G 구성음 인정, 다음 E/G 안내",
+      "status": "automated_pass",
+      "evidence": [
+        "world-e2e: C then physical G preserves one accepted slot and checks chord-tone wrong-slot explanation",
+        "accessibility-e2e: C→G wrong→E→G under grayscale verifies G4 remains identified as a chord member",
+        "src/game/music/domain.ts: chord_tone_wrong_slot"
+      ],
+      "limits": "지정 순서 과제 C의 지원 범위에서 검증했다. 모든 화음 문맥의 표현에 대한 음악 전문가 검수는 수행하지 않았다.",
+      "relatedMT": [
+        "MT-F02"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "C4 후 G4를 친 뒤 E4,G4로 복구",
+      "sourceExpectedResult": "진행 보존. G4가 C장3화음의 구성음임을 부정하지 않고 이번 순서 차이를 설명",
+      "sourceLine": 2480
+    },
+    {
+      "id": "U14",
+      "stage": "S12–S15",
+      "requirement": "선언된 문맥상 대안 화성을 허용하거나 다중 해석 표시",
+      "status": "automated_pass",
+      "evidence": [
+        "content-unit: MT-J09/J21/J28 accepts declared different harmonic routes",
+        "src/game/music/domain.ts: alternatives produce equivalent"
+      ],
+      "limits": "명시적으로 등록된 대안에 한정한다. 전문가가 검수한 포괄적 화성 분석기가 아니다.",
+      "relatedMT": [
+        "MT-J09",
+        "MT-J21",
+        "MT-J28"
+      ],
+      "priority": "중요",
+      "sourceInitialCondition": "문맥상 허용된 대안 화성 분석 제출",
+      "sourceExpectedResult": "허용 분석이면 통과 또는 다중 해석 표시. 단일 레이블만 정답으로 고정하지 않음",
+      "sourceLine": 2481
+    },
+    {
+      "id": "U15",
+      "stage": "S11–S20",
+      "requirement": "자동 범위 밖 답은 검토 필요이며 음악 오류로 단정하지 않음",
+      "status": "partial",
+      "evidence": [
+        "src/game/music/domain.ts: supported=false; voice_outside_fixture; missing contracts",
+        "engine-unit: constraints missing becomes review_required",
+        "content-unit: MT-J04 outside fixture review_required"
+      ],
+      "limits": "준비된 선택지/스키마 밖 자유 분석을 보존하고 전문가에게 전달하는 실제 검토 워크플로는 없다.",
+      "relatedMT": [
+        "MT-J04"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "자동 판정 지원 범위 밖 분석·보이싱 제출",
+      "sourceExpectedResult": "“자동 판정 범위 밖/검토 필요” 상태. 무조건 음악적 오류로 집계하지 않음",
+      "sourceLine": 2482
+    },
+    {
+      "id": "U16",
+      "stage": "S06",
+      "requirement": "원본 순서 과제를 매우 느리게 해도 시간 감점·박자 오답 없음",
+      "status": "partial",
+      "evidence": [
+        "src/game/music/MusicWorldScene.ts: no deadline/damage/scoring clock",
+        "src/game/music/session.ts: no elapsed-time condition in ordered evaluation",
+        "world-e2e: full C sequence with pause/fall"
+      ],
+      "limits": "시간 보너스/벌점 경로가 없음을 확인했으나 수십 분 이상 느린 실제 플레이 시험은 하지 않았다.",
+      "relatedMT": [
+        "MT-F02"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "원본 타격 과제를 매우 느리게 완료",
+      "sourceExpectedResult": "시간 감점·박자 오답 없음. 원래 과제의 시간 무제한 계약 유지",
+      "sourceLine": 2483
+    },
+    {
+      "id": "U17",
+      "stage": "S10",
+      "requirement": "같은 timestamp는 물리 비행시간에 관계없이 같은 음악 타이밍 결과",
+      "status": "partial",
+      "evidence": [
+        "audio-unit: matchTaps pure timestamp contract",
+        "src/components/MusicRhythmPad.tsx: DOM event.timeStamp; separate from block collisions"
+      ],
+      "limits": "패드 시각과 충돌은 구조상 분리되지만 동일 timestamp와 서로 다른 실제 비행시간을 재생하는 통합 시험은 없다.",
+      "relatedMT": [
+        "MT-F21",
+        "MT-A08"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "정밀 연주 모드의 동일 timestamp 입력을 서로 다른 물리 비행시간으로 재생",
+      "sourceExpectedResult": "음악 타이밍 결과 동일. 충돌 시각을 연주 onset으로 대체하지 않음",
+      "sourceLine": 2484
+    },
+    {
+      "id": "U18",
+      "stage": "S03/S10",
+      "requirement": "패드 입력 뒤 아바타 충돌도 오디오·진행·보상을 중복 기록하지 않음",
+      "status": "partial",
+      "evidence": [
+        "engine-unit: cross-source actionId deduplication",
+        "src/components/MusicPractice.tsx: safe selection pauses world",
+        "src/components/MusicRhythmPad.tsx: observation-only, no reward"
+      ],
+      "limits": "패드와 이후 충돌의 동일 동작을 공유 actionId로 연결하는 실제 어댑터/통합 시험은 없다. 패드 관찰과 과제 선택은 별도 경로다.",
+      "relatedMT": [
+        "MT-F21"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "연주 패드 입력 뒤 아바타가 같은 블록에 충돌",
+      "sourceExpectedResult": "하나의 응답만 기록. 오디오·진행·보상 중복 없음",
+      "sourceLine": 2485
+    },
+    {
+      "id": "U19",
+      "stage": "S10",
+      "requirement": "±100ms 경계 포함 및 ±101ms 제외, 부호·원자료 보존",
+      "status": "automated_pass",
+      "evidence": [
+        "audio-unit: synthetic ±100 and ±101 boundaries",
+        "engine-unit: inclusive timing window with one coordinate system"
+      ],
+      "limits": "합성 fixture의 창 판정 통과이며 실제 장치 지연 정밀도를 뜻하지 않는다.",
+      "relatedMT": [
+        "MT-F21"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "가상 ±100ms 창, 오프셋 0으로 -100,-101,+100,+101ms 입력",
+      "sourceExpectedResult": "경계 포함 규칙대로 -100/+100은 범위 내, -101/+101은 밖. 설정·부호·원자료를 재현 가능하게 기록",
+      "sourceLine": 2486
+    },
+    {
+      "id": "U20",
+      "stage": "S10",
+      "requirement": "이미 출력 대응된 80ms 지연을 다시 보정하지 않음",
+      "status": "automated_pass",
+      "evidence": [
+        "audio-unit: output-mapped targets directly; response bias exactly once",
+        "src/game/music/domain.ts: matchRhythmInputs has no output-latency subtraction",
+        "src/game/music/audio.ts: outputStartMs mapping"
+      ],
+      "limits": "출력 시간 좌표와 응답 편향 API 설계/합성 fixture 범위. 실제 이어폰 경로별 지연 검증은 없다.",
+      "relatedMT": [
+        "MT-F21"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "출력 대응에 80ms가 이미 반영된 fixture에 같은 지연 보정 추가 시도",
+      "sourceExpectedResult": "중복 적용을 검출하거나 설계상 방지. 80ms를 두 번 빼지 않음",
+      "sourceLine": 2487
+    },
+    {
+      "id": "U21",
+      "stage": "S10",
+      "requirement": "불안정한 반응 보정 샘플은 성공 처리하지 않고 정밀 채점 보류",
+      "status": "partial",
+      "evidence": [
+        "timing-unit: raw >=8-sample stability, bounds, invalid clock and extra taps",
+        "timing-e2e: ClockAudioContext fixture accepts stable80ms and holds alternating±90ms samples",
+        "src/components/MusicRhythmPad.tsx: deferred/retry UI"
+      ],
+      "limits": "보류 판단과 UI는 검증했다. stddev30ms/range100ms/median±250ms는 시제품 기준이며 실기기·교육적 타당성이 검증된 허용 범위가 아니다.",
+      "relatedMT": [
+        "MT-F21"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "반응 보정 샘플의 변동이 검증된 허용 범위를 초과",
+      "sourceExpectedResult": "보정 성공으로 표시하지 않음. 신뢰 낮음·재시도·정밀 채점 보류 선택 제공",
+      "sourceLine": 2488
+    },
+    {
+      "id": "U22",
+      "stage": "S10",
+      "requirement": "출력 장치 변경 시 이전 보정/테이크를 재확인 또는 재시작",
+      "status": "partial",
+      "evidence": [
+        "timing-unit: route revision invalidates prior calibration without losing samples",
+        "timing-e2e: synthetic sinkchange disables pad, discards take, requires fresh count-in and leaves reward0",
+        "src/game/music/audio.ts and MusicRhythmPad.tsx: sinkchange/devicechange/manual route change"
+      ],
+      "limits": "실제 이어폰/OS 출력 경로 변경은 검증하지 않았다. 모든 브라우저가 모든 경로 변경을 감지한다고 보장하지 않으며 수동 변경 버튼을 제공한다.",
+      "relatedMT": [
+        "MT-F21"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "이어폰 출력 경로 변경을 감지한 뒤 이전 테이크 재개",
+      "sourceExpectedResult": "이전 보정 유효성 재확인. 현재 테이크는 재시작 또는 보류하며 갑작스러운 오답 부과 없음",
+      "sourceLine": 2489
+    },
+    {
+      "id": "U23",
+      "stage": "S10",
+      "requirement": "숨김·오디오 중단·포커스 상실은 입력 해제와 새 카운트인, 자동 누락 채점 금지",
+      "status": "partial",
+      "evidence": [
+        "src/components/MusicRhythmPad.tsx: blur/visibility/device interruptions stop take and require new count-in",
+        "contracts-e2e: listening pause invalidates scheduled confirmation until fresh playback",
+        "world-e2e: pause flushes input and resume preserves a fresh key"
+      ],
+      "limits": "청음 일시정지와 세계 입력 해제는 검증했다. 실기기 백그라운드 전환·오디오 suspended 상태·리듬 테이크를 조합한 검증은 없다.",
+      "relatedMT": [
+        "MT-F21"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "리듬 중 탭 숨김·오디오 중단·포커스 상실",
+      "sourceExpectedResult": "입력 상태 해제, 테이크 상태 명확화, 새 카운트인. 숨겨진 동안의 박을 모두 누락으로 확정하지 않음",
+      "sourceLine": 2490
+    },
+    {
+      "id": "U24",
+      "stage": "S10",
+      "requirement": "인접 목표·난타도 입력-목표 일대일 매칭, 추가 입력 표시",
+      "status": "automated_pass",
+      "evidence": [
+        "audio-unit: one input once; extra and missing taps",
+        "engine-unit: one-to-one matching; greedy counterexample",
+        "src/components/MusicRhythmPad.tsx: additional input count"
+      ],
+      "limits": "합성 타이밍과 결과 표시 구현 범위이며 현장 연주 정확도 검증은 아니다.",
+      "relatedMT": [
+        "MT-F21"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "두 인접 목표 사이 한 타격, 또는 한 목표 근처 난타",
+      "sourceExpectedResult": "일대일 매칭. 한 타격으로 두 정답 획득 안 됨. 추가 입력 처리 규칙을 숨기지 않음",
+      "sourceLine": 2491
+    },
+    {
+      "id": "U25",
+      "stage": "S17",
+      "requirement": "서로 다른 세 유효 즉흥 선율을 공개 조건으로 인정",
+      "status": "automated_pass",
+      "evidence": [
+        "engine-unit: three different creative phrases accepted",
+        "content-unit: MT-A01/A02/A07 three constrained phrase witnesses"
+      ],
+      "limits": "공개 제약의 조건 충족만 확인한다. 예술적 우열이나 전체 즉흥 숙달을 평가하지 않는다.",
+      "relatedMT": [
+        "MT-A01",
+        "MT-A02",
+        "MT-A07"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "제한 즉흥의 서로 다른 세 유효 선율 제출",
+      "sourceExpectedResult": "모두 명시 조건 충족으로 인정. 모범답안 MIDI 배열과 다르다는 이유로 거부하지 않음",
+      "sourceLine": 2492
+    },
+    {
+      "id": "U26",
+      "stage": "S17",
+      "requirement": "허용된 반음계 접근이 코드톤으로 해결되면 문맥 규칙 적용",
+      "status": "automated_pass",
+      "evidence": [
+        "engine-unit: declared chromatic approach resolves by semitone",
+        "content-unit: MT-A01 different chromatic approaches"
+      ],
+      "limits": "현재 구현은 바로 다음 음의 반음 해결이라는 선언된 한정 규칙이다. 모든 지연 해결/바깥 연주를 분석하지 않는다.",
+      "relatedMT": [
+        "MT-A01",
+        "MT-A14"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "반음계 접근 허용 과제에서 코드톤으로 해결하는 외부음 제출",
+      "sourceExpectedResult": "선언된 문맥 규칙으로 확인하거나 해석 보류. 스케일 밖이라는 이유만으로 즉시 오답 아님",
+      "sourceLine": 2493
+    },
+    {
+      "id": "U27",
+      "stage": "S17",
+      "requirement": "쉼·음 수 차이를 창의성 순위로 만들지 않고 사실적 관찰 제공",
+      "status": "partial",
+      "evidence": [
+        "src/game/music/domain.ts: constraints observations notes/rests/selectedCount",
+        "src/components/MusicPractice.tsx: no artistic score"
+      ],
+      "limits": "음 수·속도 순위는 없지만 서로 다른 구절의 쉼·반복 관찰을 나란히 설명하는 비교 UI/검사는 없다.",
+      "relatedMT": [
+        "MT-A06",
+        "MT-A07"
+      ],
+      "priority": "중요",
+      "sourceInitialCondition": "동일 조건에서 쉼 많은 연주와 음 수 많은 연주 비교",
+      "sourceExpectedResult": "음 수·속도로 창의성 우열을 자동 매기지 않음. 쉼 위치·반복 등 사실적 관찰 제공",
+      "sourceLine": 2494
+    },
+    {
+      "id": "U28",
+      "stage": "S17",
+      "requirement": "원입력과 양자화 재생 구분, 보정본으로 원시 타이밍 점수 조작 금지",
+      "status": "automated_pass",
+      "evidence": [
+        "timing-unit: raw/quantized replay copies retain original timestamps and observation",
+        "timing-e2e: distinct raw/quantized labels and replay buttons leave timing-results text unchanged"
+      ],
+      "limits": "원입력/양자화 데이터 분리와 UI·결과 불변성을 합성 출력 시계로 확인했다. 실기기 재생음 비교나 정밀 리듬 숙달을 검증한 것은 아니다.",
+      "relatedMT": [
+        "MT-A08"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "학생 입력을 양자화한 재생과 원래 재생 비교",
+      "sourceExpectedResult": "각각 보정 재생·원래 입력으로 명시. 보정본으로 원래 타이밍 점수를 조작하지 않음",
+      "sourceLine": 2495
+    },
+    {
+      "id": "U29",
+      "stage": "S17/S19",
+      "requirement": "자유 창작 결과에 과정·관찰·학생 자기평가, 단일 재즈 실력점수 금지",
+      "status": "automated_pass",
+      "evidence": [
+        "evidence-e2e: completed A07 creative phrase stores self-reflection, displays it separately and retains it after reload with reward1",
+        "evidence-unit: reflection does not alter answer, outcome or reward and has no artistic score",
+        "src/components/MusicEvidenceReport.tsx: process/support/response observations plus user-authored text"
+      ],
+      "limits": "공개 제약 창작의 자기평가·과정 기록 범위다. 음악적 우열, 교사 평가, 실제 연주 능력 또는 장기 향상을 자동 판정하지 않는다.",
+      "relatedMT": [
+        "MT-A07",
+        "MT-A16"
+      ],
+      "priority": "중요",
+      "sourceInitialCondition": "자유 창작 완료 후 결과 화면",
+      "sourceExpectedResult": "과정 조건·관찰·학생 자기평가 제공. 근거 없는 단일 “재즈 실력 점수” 없음",
+      "sourceLine": 2496
+    },
+    {
+      "id": "U30",
+      "stage": "S06/S22",
+      "requirement": "C/F를 무음으로 완주하고 목표·진행·완료·복귀를 비청각 확인",
+      "status": "automated_pass",
+      "evidence": [
+        "world-e2e: muted default C/F safe sequence; physical C/fall/gate",
+        "src/components/MusicPractice.tsx: textual tray/feedback/completion"
+      ],
+      "limits": "자동 Chromium 검증이며 실제 청각장애 사용자 사용성 평가를 대체하지 않는다.",
+      "relatedMT": [
+        "MT-F02"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "C·F 과제를 음소거로 처음부터 완료",
+      "sourceExpectedResult": "목표·응답·진행·완료·안전 복귀를 비청각 정보로 확인 가능",
+      "sourceLine": 2497
+    },
+    {
+      "id": "U31",
+      "stage": "S08/S22",
+      "requirement": "청음 중 무음 전환은 미측정이며 청음 성공으로 저장하지 않음",
+      "status": "automated_pass",
+      "evidence": [
+        "learning-e2e: hidden-target listening stays unmeasured before completed stimulus plus explicit hearing confirmation",
+        "contracts-e2e: pause cancels pending confirmation and mute after confirmed hearing yields unmeasured with reward 0",
+        "content-unit: audioAvailable/muted/interrupted/answerExposed guards"
+      ],
+      "limits": "브라우저 Web Audio 요청과 사용자의 들림 확인 상태를 검증했다. 실제 귀에 전달된 음향이나 청음 능력을 자동 검증한 결과는 아니다.",
+      "relatedMT": [
+        "MT-F01",
+        "MT-F24"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "소리 구별 문제에서 무음 전환",
+      "sourceExpectedResult": "청음 측정 보류 또는 다른 목표로 전환. 무음 정답을 청음 성공으로 저장하지 않음",
+      "sourceLine": 2498
+    },
+    {
+      "id": "U32",
+      "stage": "S22",
+      "requirement": "회색조·색각 시뮬레이션에서도 목표·정답·오답·완료·선택·포커스 구분",
+      "status": "partial",
+      "evidence": [
+        "accessibility-e2e: grayscale(1), text target, selected check mark, wrong-slot explanation, 3px keyboard outline, completion and next-stage checks",
+        "output/verification/grayscale-reduced-motion-mobile.png: local grayscale screenshot inspected"
+      ],
+      "limits": "회색조에서 대표 C 과제의 비색상 상태와 키보드 포커스는 확인했다. 적록/청황 색각 시뮬레이션 전체, 전 콘텐츠 대비 및 실사용자 접근성 평가는 하지 않았다.",
+      "relatedMT": [],
+      "priority": "차단",
+      "sourceInitialCondition": "회색조·색각 시뮬레이션에서 상태 확인",
+      "sourceExpectedResult": "색 없이도 현재 목표·정답·오답·완료·선택·포커스 식별 가능",
+      "sourceLine": 2499
+    },
+    {
+      "id": "U33",
+      "stage": "S22",
+      "requirement": "좁은 화면·큰 글꼴·확대에서도 옥타브·변화표·핵심 제어 노출",
+      "status": "partial",
+      "evidence": [
+        "world-e2e: 390px portrait/camera/44px controls/no overflow",
+        "output/verification/large-choice-world-mobile.png: 16-choice A09 at390px"
+      ],
+      "limits": "200% 확대, OS 큰 글꼴, 실제 모바일 가로/세로 회전, 모든 변화표/긴 교사 표찰은 미검증이다.",
+      "relatedMT": [],
+      "priority": "중요",
+      "sourceInitialCondition": "좁은 화면·큰 글꼴·확대 상태에서 목표와 버튼 확인",
+      "sourceExpectedResult": "음 옥타브·변화표·핵심 제어가 가려지지 않음. 캔버스 크기 고정만으로 확대를 막지 않음",
+      "sourceLine": 2500
+    },
+    {
+      "id": "U34",
+      "stage": "S22",
+      "requirement": "시작→도움→설정→선택→결과→나가기 전체 키보드 접근",
+      "status": "automated_pass",
+      "evidence": [
+        "accessibility-e2e: only Tab/Shift+Tab/Enter/Space from main menu to settings, safe-selection preference, help, C completion, report and main-menu exit",
+        "world-e2e: real keyboard movement/head contact and external-button Space isolation"
+      ],
+      "limits": "대표 연습의 필수 키보드 경로를 실제 Chromium에서 확인했다. 모든 교사 편집 고급 흐름과 스크린리더 사용까지 인증한 것은 아니다.",
+      "relatedMT": [],
+      "priority": "차단",
+      "sourceInitialCondition": "마우스 없이 시작→도움→설정→선택→결과→나가기",
+      "sourceExpectedResult": "모든 필수 기능에 키보드 경로가 있고 포커스 함정 없음",
+      "sourceLine": 2501
+    },
+    {
+      "id": "U35",
+      "stage": "S03/S22",
+      "requirement": "Enter/Space 길게 누름·키 반복으로 UI·음악 중복 응답 방지",
+      "status": "partial",
+      "evidence": [
+        "learning-e2e: duplicate-allowed a16 creative task accepts one repeated Enter group and one repeated Space group; fresh key presses add new notes",
+        "contact-unit: 60-frame contact produces one event then separation permits another",
+        "src/components/MusicWorld.tsx: held-key and repeat suppression"
+      ],
+      "limits": "반복이 실제로 허용되는 창작 응답에서 Enter/Space의 반복 억제와 새 입력 허용을 검증했다. 모든 메뉴·리듬 패드·운영체제 키 반복 속도의 조합은 검증하지 않았다.",
+      "relatedMT": [],
+      "priority": "차단",
+      "sourceInitialCondition": "Enter/Space 길게 누름 또는 키 반복 발생",
+      "sourceExpectedResult": "UI 반복 실행과 음악 중복 응답이 생기지 않음. 연주 재타격은 명시 규칙대로 처리",
+      "sourceLine": 2502
+    },
+    {
+      "id": "U36",
+      "stage": "S22",
+      "requirement": "일반 제출 버튼 누른 채 밖으로 이동 후 해제 시 취소, 다음 단계로 입력 누출 없음",
+      "status": "partial",
+      "evidence": [
+        "accessibility-e2e: real pointer-down on F13 submit, drag outside, pointer-up leaves 3-note tray and reward0; proper click then completes once",
+        "world-e2e: movement pointer capture releases outside its button"
+      ],
+      "limits": "일반 제출의 마우스 포인터 취소는 실제 브라우저에서 확인했다. 실제 터치 기기의 drag-out/다음 화면 pointerup 누출 조합은 별도 미검증이다.",
+      "relatedMT": [],
+      "priority": "차단",
+      "sourceInitialCondition": "터치 제출 버튼을 누른 채 밖으로 이동 후 놓기",
+      "sourceExpectedResult": "일반 제출 취소 가능. 다음 단계 입력으로 새어나오지 않음",
+      "sourceLine": 2503
+    },
+    {
+      "id": "U37",
+      "stage": "S03/S22",
+      "requirement": "이동+점프 중 pointercancel·앱 전환 이후 눌림 상태 해제",
+      "status": "partial",
+      "evidence": [
+        "accessibility-e2e: held right movement receives pointercancel and stops after release",
+        "world-e2e: drag-out release, pause flush and fresh-key resume regression pass",
+        "src/components/MusicWorld.tsx: lostcapture/blur/visibility flush"
+      ],
+      "limits": "pointercancel 이동 정지는 확인했다. 실제 앱 전환 중 이동+점프 동시 누름과 다양한 다중 터치 조합은 검증하지 않았다.",
+      "relatedMT": [],
+      "priority": "차단",
+      "sourceInitialCondition": "이동+점프 중 pointercancel·앱 전환",
+      "sourceExpectedResult": "눌린 상태 해제. 복귀 후 캐릭터가 혼자 이동·점프하지 않음",
+      "sourceLine": 2504
+    },
+    {
+      "id": "U38",
+      "stage": "S08/S22",
+      "requirement": "단일 포인터·한 키 단계식 입력으로 구성음/화음 지식 목표 완료",
+      "status": "automated_pass",
+      "evidence": [
+        "world-e2e: sequential single-pointer safe C/F completion and same reward",
+        "engine-unit: shared safe/platform rule"
+      ],
+      "limits": "포인터를 한 번에 하나씩 사용하는 Chromium UI 경로 통과이다. 실제 스위치/보조기기 사용자 검사는 아니다.",
+      "relatedMT": [
+        "MT-F02",
+        "MT-F13"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "단일 포인터·한 번에 하나의 키만 사용하는 입력으로 구성음·화음 과제 수행",
+      "sourceExpectedResult": "단계식 선택·확정 경로로 같은 지식 목표 완료 가능",
+      "sourceLine": 2505
+    },
+    {
+      "id": "U39",
+      "stage": "S22",
+      "requirement": "스크린리더에서 C4/C5/Cmaj7/C7/♯/♭/♮ 의미 구별",
+      "status": "partial",
+      "evidence": [
+        "src/game/music/domain.ts: accessiblePitchName spells accidental/octave/MIDI/cents",
+        "src/components/MusicNotation.tsx: semantic SVG label",
+        "src/components/MusicPractice.tsx: safe option accessible labels"
+      ],
+      "limits": "실제 스크린리더 발화는 미검증이며 화음 기호의 완전한 언어 풀이를 모든 옵션에 제공하지 않는다.",
+      "relatedMT": [],
+      "priority": "차단",
+      "sourceInitialCondition": "스크린리더에서 C4,C5,Cmaj7,C7,♯,♭,♮ 탐색",
+      "sourceExpectedResult": "각 의미가 구별되는 접근성 이름. MIDI 음과 표기가 일치하며 필요한 상태 포함",
+      "sourceLine": 2506
+    },
+    {
+      "id": "U40",
+      "stage": "S03/S22",
+      "requirement": "60프레임 접촉은 60회 낭독하지 않고 유효 변화만 알림",
+      "status": "partial",
+      "evidence": [
+        "contact-unit: 60-frame contact accepted once",
+        "engine-unit: 60 contact frames create one raw response",
+        "src/components/MusicPractice.tsx: polite live status"
+      ],
+      "limits": "응답 중복 제거는 검증했다. 실제 보조기기 낭독 횟수와 포커스 유지의 조합은 측정하지 않았다.",
+      "relatedMT": [],
+      "priority": "중요",
+      "sourceInitialCondition": "같은 접촉 60프레임, 이어 정답 1회 발생",
+      "sourceExpectedResult": "60회 낭독하지 않음. 유효 변화 알림만 제공하고 포커스 유지",
+      "sourceLine": 2507
+    },
+    {
+      "id": "U41",
+      "stage": "S22",
+      "requirement": "도움 열기·닫기 및 고정 HUD 제어의 초기/복귀 포커스와 가림 방지",
+      "status": "partial",
+      "evidence": [
+        "accessibility-e2e: keyboard entry/exit and map title focus restored",
+        "src/editor/components/MusicEditor.tsx: focus capture/restore and Tab/Escape behavior",
+        "src/components/MusicPractice.tsx: inline help"
+      ],
+      "limits": "대표 지도 복귀 포커스는 확인했다. 도움은 인라인으로 제공한다. 편집기 모달·고정 HUD·실제 200% 확대에서 모든 포커스 가림을 검증하지 않았다.",
+      "relatedMT": [],
+      "priority": "중요",
+      "sourceInitialCondition": "도움 모달 열기·닫기, 고정 HUD 아래 제어로 이동",
+      "sourceExpectedResult": "의미 있는 초기 포커스와 복귀 위치. 포커스가 완전히 가려지지 않음",
+      "sourceLine": 2508
+    },
+    {
+      "id": "U42",
+      "stage": "S22",
+      "requirement": "움직임 감소에서도 보상·단계 전환 정보 동일",
+      "status": "automated_pass",
+      "evidence": [
+        "accessibility-e2e: prefers-reduced-motion enables mode, C completion reward1 and F transition preserve information",
+        "src/game/music/MusicWorldScene.ts: no hit bounce tween or alternating run frames in reduced mode",
+        "src/styles/music.css: motion-reduction rules"
+      ],
+      "limits": "대표 C→F 안전 선택 흐름과 설정 적용을 검증했다. 감각 민감성 사용자 평가 또는 모든 애니메이션의 전문 접근성 인증은 아니다.",
+      "relatedMT": [],
+      "priority": "중요",
+      "sourceInitialCondition": "움직임 감소 설정으로 보상·단계 전환 확인",
+      "sourceExpectedResult": "흔들림·과도한 이동 없이 동일 완료 정보를 확인 가능",
+      "sourceLine": 2509
+    },
+    {
+      "id": "U43",
+      "stage": "S09",
+      "requirement": "새 7화음 기본 수업에서 이론·명칭 숨김·점프·템포를 동시에 어렵게 하지 않음",
+      "status": "partial",
+      "evidence": [
+        "src/game/music/curriculum.ts: F17 examples use declared theory fixtures",
+        "src/game/music/MusicWorldScene.ts: identical block height and physics for all activities",
+        "src/components/MusicPractice.tsx: guided target default"
+      ],
+      "limits": "안내/물리 기본값은 유지된다. 실제 학생 대상 난이도 증가/인지부하 평가와 새 레슨 생성 시나리오 검사는 없다.",
+      "relatedMT": [
+        "MT-F17"
+      ],
+      "priority": "중요",
+      "sourceInitialCondition": "새 7화음을 처음 소개하는 기본 레슨 생성",
+      "sourceExpectedResult": "신규 이론과 함께 모든 음명 숨김·점프 난이도·템포를 일괄 상승시키지 않음",
+      "sourceLine": 2510
+    },
+    {
+      "id": "U44",
+      "stage": "S08–S20",
+      "requirement": "진단 통과/교사 건너뛰기로 목표에 바로 이동, 미측정 유지",
+      "status": "partial",
+      "evidence": [
+        "src/components/MusicPracticeSupport.tsx: explicit skip reasons and unblocked target navigation",
+        "src/game/music/session.ts: navigationDecision records reason without completion",
+        "evidence-unit: skipped activity remains unmeasured",
+        "src/components/MusicApp.tsx: all supported modules directly selectable"
+      ],
+      "limits": "사전 진단시험 대신 직접 선택·건너뛰기 경로를 제공한다. 선택 이유를 진단 결과나 숙달로 바꾸지 않는다. 적응형 진단 자체는 구현하지 않았다.",
+      "relatedMT": [],
+      "priority": "중요",
+      "sourceInitialCondition": "학생이 선수 진단을 통과하거나 교사가 건너뛰기 선택",
+      "sourceExpectedResult": "불필요한 전 과정 잠금 해제 없이 목표 과제로 이동 가능; 미측정 영역은 그대로 표시",
+      "sourceLine": 2511
+    },
+    {
+      "id": "U45",
+      "stage": "S08",
+      "requirement": "반복 실패 시 선택형 힌트·안전 입력·선수 제안, 낙인/몰수/영구잠금 금지",
+      "status": "automated_pass",
+      "evidence": [
+        "evidence-e2e: repeated F13 mismatch offers optional F02 prerequisite, help/safe-input description and skip without reward loss/lock",
+        "evidence-unit: support thresholds and module prerequisites are recommendations",
+        "src/components/MusicPracticeSupport.tsx: optional routes and no diagnosis"
+      ],
+      "limits": "지원하는 반복 시도 경로를 확인했다. 개별 학습 원인에 대한 적응형 진단 또는 수업 효과를 입증한 것은 아니다.",
+      "relatedMT": [],
+      "priority": "중요",
+      "sourceInitialCondition": "같은 유형에서 반복 실패",
+      "sourceExpectedResult": "선택형 힌트·안전 입력·선수 연습 제안. 강제 능력 낙인·코인 몰수·영구 잠금 없음",
+      "sourceLine": 2512
+    },
+    {
+      "id": "U46",
+      "stage": "S02/S08",
+      "requirement": "고정도에서 조성이 바뀌어도 F=파, 이동도는 명시적 새 조건",
+      "status": "automated_pass",
+      "evidence": [
+        "engine-unit: fixed-do vs movable-do accidental behavior",
+        "engine-unit: notation settings snapshotted for attempt",
+        "src/components/MusicApp.tsx: explicit solfege setting"
+      ],
+      "limits": "기보 명칭 도메인과 고정된 시도 설정 범위이다. 모든 조성의 사용자 발화 검사는 아니다.",
+      "relatedMT": [
+        "MT-F03"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "고정도 문제 중 조성이 바뀜",
+      "sourceExpectedResult": "F의 근음 파를 갑자기 도로 바꾸지 않음. 이동도 전환은 명시된 새 조건",
+      "sourceLine": 2513
+    },
+    {
+      "id": "U47",
+      "stage": "S11/S20",
+      "requirement": "에디터 후보에 없는 목표는 저장 전 위치·수정법 포함 오류",
+      "status": "partial",
+      "evidence": [
+        "content-unit: missing candidate target identifies target[0] and blocks validation",
+        "editor-unit: invalid package blocks import/migration",
+        "editor-e2e: MIDI conflict disables apply while retaining original source and showing validation message"
+      ],
+      "limits": "없는 목표 후보는 단위 검증으로 확인했다. 실제 교사 UI E2E는 MIDI 충돌 사례이며 없는 후보 목표를 직접 편집한 전체 동일 시나리오는 아니다.",
+      "relatedMT": [],
+      "priority": "차단",
+      "sourceInitialCondition": "에디터에서 후보에 없는 목표음 지정",
+      "sourceExpectedResult": "저장/게시 전 차단 오류와 정확한 위치·수정 방법 표시",
+      "sourceLine": 2514
+    },
+    {
+      "id": "U48",
+      "stage": "S11/S20",
+      "requirement": "C 기본위치와 E 베이스 강제 모순을 차단·설명",
+      "status": "automated_pass",
+      "evidence": [
+        "content-unit: conflicting bass conditions causes target error",
+        "src/game/music/contentValidation.ts: declared witness evaluated against bass contract"
+      ],
+      "limits": "표준 음집합/실제 베이스 경성 조건의 모순 검증이다. 자연어만으로 적힌 모든 모순을 탐지하지 않는다.",
+      "relatedMT": [
+        "MT-F15"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "에디터에 C장3화음의 기본위치 요구와 베이스 E를 동시에 강제",
+      "sourceExpectedResult": "모순을 차단하고 어떤 조건이 충돌하는지 설명",
+      "sourceLine": 2515
+    },
+    {
+      "id": "U49",
+      "stage": "S11/S20",
+      "requirement": "청음 답 노출 경고와 시범/이론 목적 확인·명칭 변경",
+      "status": "automated_pass",
+      "evidence": [
+        "contracts-e2e: visible answers in a listening task disable apply; named action converts learning purpose and label to symbolic-theory demonstration",
+        "src/editor/components/MusicEditor.tsx: answer-exposure validation and explicit conversion"
+      ],
+      "limits": "지원하는 교사 편집 과제 스키마에서 목적·명칭 전환을 검증했다. 작성된 모든 자연어 지시의 의미를 자동 판별하지 않는다.",
+      "relatedMT": [
+        "MT-F01",
+        "MT-F24"
+      ],
+      "priority": "중요",
+      "sourceInitialCondition": "청음 과제에 답 이름·계이름을 기본 표시",
+      "sourceExpectedResult": "답 노출 경고. 교사가 시범·이론 과제로 의도했는지 확인하고 평가 명칭 수정 가능",
+      "sourceLine": 2516
+    },
+    {
+      "id": "U50",
+      "stage": "S11/S20",
+      "requirement": "자유 즉흥에 예시 exact-sequence만 쓰는 판정 충돌 차단",
+      "status": "automated_pass",
+      "evidence": [
+        "contracts-e2e: create_phrase purpose on ordered task blocks apply and explains free-creation conflict",
+        "src/game/music/contentValidation.ts: structured learning-purpose/grading-kind conflict guard"
+      ],
+      "limits": "명시된 학습 목적과 판정 종류의 충돌을 차단한다. 자연어 지시만으로 숨겨진 창작 의도를 추론하지 않는다.",
+      "relatedMT": [
+        "MT-A07"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "자유 즉흥에 예시 한 개만 넣고 exact sequence 판정 지정",
+      "sourceExpectedResult": "창작 목적과 판정 충돌을 차단 또는 명시적인 모방 과제로 변경",
+      "sourceLine": 2517
+    },
+    {
+      "id": "U51",
+      "stage": "S03/S20",
+      "requirement": "진행 시도 중 교사 규칙 수정은 현재 시도에 소급 적용하지 않음",
+      "status": "automated_pass",
+      "evidence": [
+        "engine-unit: fixes content and notation snapshots entire attempt",
+        "editor-unit: defensive package copy isolates teacher edits",
+        "src/game/music/session.ts: deep sealed snapshot"
+      ],
+      "limits": "한 기기 인메모리 시도/복사 계약이다. 다기기 교사 실시간 협업은 없다.",
+      "relatedMT": [],
+      "priority": "차단",
+      "sourceInitialCondition": "학생 시도 도중 교사가 정답·음역·리듬 규칙 수정",
+      "sourceExpectedResult": "진행 시도의 규칙 버전 고정. 소급 오답 변화 없음",
+      "sourceLine": 2518
+    },
+    {
+      "id": "U52",
+      "stage": "S20/S22",
+      "requirement": "드래그 없이 버튼·키보드로 화음 순서 편집",
+      "status": "automated_pass",
+      "evidence": [
+        "contracts-e2e: focused reorder button + Enter changes target from C/E/G to E/C/G, undo restores target",
+        "src/editor/components/MusicEditor.tsx: target reorder buttons plus JSON keyboard editing"
+      ],
+      "limits": "지원되는 목표 순서 편집에서 드래그 없는 동일 작업을 확인했다. 모든 기존 Sky Forge 공간 오브젝트 드래그 편집을 대체하는 기능은 아니다.",
+      "relatedMT": [],
+      "priority": "중요",
+      "sourceInitialCondition": "에디터에서 화음 순서를 드래그 없이 변경",
+      "sourceExpectedResult": "버튼·키보드 대안으로 동일 작업 완료 가능",
+      "sourceLine": 2519
+    },
+    {
+      "id": "U53",
+      "stage": "S04/S20",
+      "requirement": "도달성 미검증을 통과로 주장하지 않고 실제 검증/안전 대안 제공",
+      "status": "automated_pass",
+      "evidence": [
+        "world-e2e: fixed block height reached with normal/grown bodies at30/60/variable steps and150/260ms jumps",
+        "src/editor/components/MusicEditor.tsx: explicit physical validation limitation",
+        "src/components/MusicPractice.tsx: safe alternative"
+      ],
+      "limits": "음악 방은 고정 높이로 배치되며 대표 높이만 측정했다. 임의 지형의 자동 도달 가능성 인증기는 아니다.",
+      "relatedMT": [],
+      "priority": "차단",
+      "sourceInitialCondition": "물리 확인 없이 과제 블록을 도달 불가 높이에 배치",
+      "sourceExpectedResult": "도달 가능성 검증 미완료를 통과로 보고하지 않음. 실제 엔진 검증 또는 안전 선택 대안 필요",
+      "sourceLine": 2520
+    },
+    {
+      "id": "U54",
+      "stage": "S05/S20",
+      "requirement": "힌트·시범·보조 사용 조건이 보고서에 보존되며 무힌트 숙달로 합치지 않음",
+      "status": "automated_pass",
+      "evidence": [
+        "evidence-e2e: demonstration and safe-input completion retain aid labels, self-reflection and results after reload",
+        "evidence-unit: hint+demonstration+safe-selection completed record retains all support labels",
+        "accessibility-e2e: help-used completed exercise opens report"
+      ],
+      "limits": "로컬 시도/보고서와 저장 범위에서 확인했다. 다기기 분석 또는 무힌트 숙달로 변환하는 기능은 제공하지 않는다.",
+      "relatedMT": [],
+      "priority": "차단",
+      "sourceInitialCondition": "힌트·시범·보조 모드를 사용한 완료 기록을 보고서로 열기",
+      "sourceExpectedResult": "조건이 보존됨. 정답률만 남기고 무힌트 숙달로 합치지 않음",
+      "sourceLine": 2521
+    },
+    {
+      "id": "U55",
+      "stage": "S05/S22",
+      "requirement": "낙하 많은 안전선택 정답 학생에게 운동/음악 성공을 따로 설명",
+      "status": "automated_pass",
+      "evidence": [
+        "evidence-e2e: actual keyboard fall then safe C completion report separates fall1 and music mismatch0",
+        "evidence-unit: three falls plus invalid contact remain separate from correct music response",
+        "world-e2e: actual side-contact telemetry persists without increasing conditionMismatches"
+      ],
+      "limits": "관찰된 이동 사건과 음악 응답을 나누는 범위다. 플랫폼 어려움의 원인을 학생 능력·장애·이론 부족으로 진단하지 않는다.",
+      "relatedMT": [],
+      "priority": "중요",
+      "sourceInitialCondition": "낙하가 많지만 안전 선택 확인은 모두 정답인 학생 사례",
+      "sourceExpectedResult": "플랫폼 어려움과 음악 응답 성공을 따로 설명. 이론을 반복 강요하지 않음",
+      "sourceLine": 2522
+    },
+    {
+      "id": "U56",
+      "stage": "S10/S22",
+      "requirement": "오디오/API 실패·낮은 신뢰는 기술 상태/미측정이며 학생0점 아님",
+      "status": "partial",
+      "evidence": [
+        "content-unit: muted/unavailable/interrupted listening guards",
+        "src/components/MusicRhythmPad.tsx: missing output-clock correspondence unmeasured",
+        "src/game/music/audio.ts: enable catches missing API"
+      ],
+      "limits": "오디오 API 제거/중단/장치별 낮은 신뢰를 실제 브라우저와 장치에 주입한 전체 검사는 없다.",
+      "relatedMT": [],
+      "priority": "차단",
+      "sourceInitialCondition": "오디오 미작동·지원 API 없음·판정 신뢰 낮음",
+      "sourceExpectedResult": "기술 상태와 미측정 표시. 학생 점수 0으로 대체하지 않음",
+      "sourceLine": 2523
+    },
+    {
+      "id": "U57",
+      "stage": "S05",
+      "requirement": "장기 저장 없는 상태에서는 세션 관찰만, 장기 향상 추정 금지",
+      "status": "automated_pass",
+      "evidence": [
+        "engine-unit: quota/locking unavailable keeps session only",
+        "src/game/music/persistence.ts: unavailable says reload recovery not guaranteed",
+        "src/components/MusicApp.tsx: bounded recent200 actual records"
+      ],
+      "limits": "로컬 실제 기록만 제시한다. 학습 향상 효과나 다기기 이력을 추정하지 않는다.",
+      "relatedMT": [],
+      "priority": "중요",
+      "sourceInitialCondition": "장기 기록 기능이 없는 세션의 결과 보기",
+      "sourceExpectedResult": "세션 내 관찰만 제시. 장기 향상·반복 학습 이력을 추정 생성하지 않음",
+      "sourceLine": 2524
+    },
+    {
+      "id": "U58",
+      "stage": "S05",
+      "requirement": "중복 완료·복귀·새로고침에서도 보상 중복 방지 및 저장 한계 정직 표시",
+      "status": "automated_pass",
+      "evidence": [
+        "engine-unit: event/episode/action dedupe; replay/content versions/interleaving; competing writer/corrupt/quota",
+        "world-e2e: C/F retry and reload remain balance2"
+      ],
+      "limits": "원자적 Web Locks/로컬 저장 지원 범위이다. 영구/클라우드 복구를 보장하지 않는다.",
+      "relatedMT": [
+        "MT-F02"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "동일 완료 이벤트 재전송, 복귀·새로고침 정책 테스트",
+      "sourceExpectedResult": "원본 보상 중복 방지 유지. 저장 지원 범위를 넘는 복구 성공을 주장하지 않음",
+      "sourceLine": 2525
+    },
+    {
+      "id": "U59",
+      "stage": "S04/S06",
+      "requirement": "수업은 피해/게임오버 없고 일반 레벨 복귀 상태 보존 정책 준수",
+      "status": "partial",
+      "evidence": [
+        "world-e2e: safe fall keeps HP3 and accepted progress",
+        "src/game/music/MusicWorldScene.ts: no loseLife/takeHit",
+        "src/App.tsx: separate menu music route"
+      ],
+      "limits": "진행 중 일반 Story에 진입하여 HP·위치·체크포인트·타이머를 저장/복원하는 출입 흐름은 없다. 메뉴 분리 실행을 그 전체 계약 완료로 표시하지 않는다.",
+      "relatedMT": [],
+      "priority": "차단",
+      "sourceInitialCondition": "수업 구간에서 오답·낙하·반복 재시도 후 일반 레벨 복귀",
+      "sourceExpectedResult": "수업 중 생명 감소·피해·게임오버 없음. 일반 레벨의 생명·재개 위치 보존 정책을 지키고 교육적 재시도가 벌점으로 새어나오지 않음",
+      "sourceLine": 2526
+    },
+    {
+      "id": "U60",
+      "stage": "S05/S06",
+      "requirement": "느린 안전 선택과 빠른 플랫폼 완료에 숨은 시간 보너스 없음",
+      "status": "partial",
+      "evidence": [
+        "src/game/music/session.ts: reward key grants constant1 regardless of elapsed/input source",
+        "engine-unit: safe/platform shared reward contract",
+        "src/App.tsx: separate music route"
+      ],
+      "limits": "빠른/느린 시도를 대조한 타이밍 실험과 진행 중 일반 레벨 시간 정책 검증은 없다. 음악 원장에는 시간 계산이 없다.",
+      "relatedMT": [],
+      "priority": "차단",
+      "sourceInitialCondition": "같은 음악 과제를 느린 안전 선택과 빠른 플랫폼 방식으로 각각 완료",
+      "sourceExpectedResult": "수업의 학습 완료·보상에 빠른 클리어 보너스를 몰래 적용하지 않음. 일반 레벨 시간·점수 계산에 수업 시간이 미치는 영향이 명시됨",
+      "sourceLine": 2527
+    },
+    {
+      "id": "U61",
+      "stage": "S05/S06",
+      "requirement": "음악 보상은 shards/총수집물/HUD/완료율/일반점수와 섞이지 않음",
+      "status": "partial",
+      "evidence": [
+        "engine-unit: local music envelope preserves preexisting bestscore bytes",
+        "src/game/music/session.ts: independent RewardLedger",
+        "src/components/MusicApp.tsx: separate music-balance"
+      ],
+      "limits": "실제 일반 레벨 shards/totalShards/점수 HUD를 음악 전후 연속 대조한 통합 검사는 없다.",
+      "relatedMT": [],
+      "priority": "차단",
+      "sourceInitialCondition": "음악 과제 완료 직전과 직후 shards/totalShards·HUD·완료율을 대조",
+      "sourceExpectedResult": "수집물 총개수와 음악 보상을 의도 없이 섞지 않음. 완료율 100% 초과·유령 수집물·점수 100 자동 부여 등의 부작용 없음",
+      "sourceLine": 2528
+    },
+    {
+      "id": "U62",
+      "stage": "S04/S07",
+      "requirement": "runeBox 1회 GrowthBud와 음악 재타격 규칙 서로 불변",
+      "status": "partial",
+      "evidence": [
+        "src/game/music/MusicWorldScene.ts: separate music blocks, no RuneBox mutation",
+        "contact-unit: music repeated hits after separation",
+        "tests/unit/levelValidation.test.ts: original runeBox layout"
+      ],
+      "limits": "원본 runeBox를 실제 타격하여 GrowthBud 1회 생성 후 음악 재타격을 교차 실행한 E2E는 없다.",
+      "relatedMT": [],
+      "priority": "차단",
+      "sourceInitialCondition": "원본 runeBox 타격과 음악 블록 재타격을 교차 시험",
+      "sourceExpectedResult": "runeBox의 spent·GrowthBud 생성 규칙과 음악의 정답 진행·재시도 규칙이 서로 변하지 않음",
+      "sourceLine": 2529
+    },
+    {
+      "id": "U63",
+      "stage": "S04/S22",
+      "requirement": "기본/성장·2단/벽점프에서 도달성과 접촉 규칙 유지",
+      "status": "partial",
+      "evidence": [
+        "world-e2e: normal22×34 and grown22×68 bodies hit the same block with150/260ms key holds at30/60/variable physics steps",
+        "world-e2e: actual airborne phase and one-contact increments required in all12 combinations",
+        "world-e2e: deterministic same-frame keyup→keydown regression preserves full jump, reverse order preserves short tap",
+        "src/game/entities/Player.ts and physicsConfig retain original physics"
+      ],
+      "limits": "정상·성장 몸체와 짧은/긴 입력 및 물리 단계 변형은 실제 브라우저에서 확인했다. 벽 점프·공중 두 번째 점프·낮은 실제 렌더 FPS·모든 모바일 장치 조합은 미검증이다. 물리 fixed-step 설정 검사를 실제 렌더 FPS 검증으로 확대하지 않는다.",
+      "relatedMT": [],
+      "priority": "중요",
+      "sourceInitialCondition": "기본 크기·성장 크기, 2단점프·벽점프 가능 상태로 같은 학습 배치 진입",
+      "sourceExpectedResult": "학습 목표 도달 가능성과 접촉 판정이 유지되거나 명시된 수업 전용 안전 상태 적용. 몸 크기에 따라 비의도 다중 타격·정답 건너뛰기 없음",
+      "sourceLine": 2530
+    },
+    {
+      "id": "U64",
+      "stage": "S20",
+      "requirement": "편집기·런타임·저장 왕복에서 목표/대안/철자/버전 보존, 미지원버전 차단",
+      "status": "automated_pass",
+      "evidence": [
+        "editor-unit: both LevelData adapters and JSON round trip preserve eight varied fixtures including alternatives, notation and versions",
+        "editor-e2e: teacher edit/test-play/apply/save/reopen retains title and notes",
+        "editor-e2e: unknown version99 source retained and apply disabled"
+      ],
+      "limits": "지원하는 음악 확장 버전1과 기존 스키마 계약의 왕복을 확인했다. 모든 미래 버전 자동 변환·서버 동기화를 지원하지 않는다.",
+      "relatedMT": [],
+      "priority": "차단",
+      "sourceInitialCondition": "편집기→런타임 변환→저장/재열기 과정에서 음악 과제 데이터 검증",
+      "sourceExpectedResult": "두 LevelData 스키마와 어댑터에서 학습 목표·대안 답·표기·버전이 유실되지 않음. 지원 안 하는 구버전은 조용히 잘못 변환하지 않음",
+      "sourceLine": 2531
+    },
+    {
+      "id": "U65",
+      "stage": "S05",
+      "requirement": "bestscore만 있는 환경에서 장기이력·다기기·영구복구를 허위 표시하지 않음",
+      "status": "automated_pass",
+      "evidence": [
+        "engine-unit: absent music data starts new scoped profile; bestscore preserved",
+        "src/game/music/persistence.ts: local/session/unavailable messaging",
+        "src/components/MusicApp.tsx: this-device last200 records wording"
+      ],
+      "limits": "실제 저장된 로컬 시도 외의 이력과 동기화는 주장하지 않는다.",
+      "relatedMT": [],
+      "priority": "차단",
+      "sourceInitialCondition": "기존 bestscore 저장만 있는 상태에서 학습 결과 화면 표시",
+      "sourceExpectedResult": "장기 학습 이력·다기기 동기화·영구 코인 복구를 이미 지원한다고 표시하지 않음",
+      "sourceLine": 2532
+    },
+    {
+      "id": "U66",
+      "stage": "S10/S23",
+      "requirement": "효과음 연결만으로 음높이/청음 완료 처리하지 않고 라벨·MIDI·실제음 별도 검증",
+      "status": "partial",
+      "evidence": [
+        "audio-unit: MIDI/frequency math at A4=440Hz",
+        "tests/e2e/music-curriculum.spec.ts: X03 captures real AudioContext oscillator scheduling for -25/+25 cents",
+        "src/components/MusicPractice.tsx: explicit audible-stimulus confirmation and unmeasured fallback"
+      ],
+      "limits": "라벨·MIDI·실제 Web Audio oscillator 요청 주파수는 검증했다. 스피커/헤드폰에서 출력된 파형을 별도 장비로 측정하거나 청음 전문가가 확인하지 않았으므로 실제 음향 검증 완료로 보고하지 않는다.",
+      "relatedMT": [],
+      "priority": "차단",
+      "sourceInitialCondition": "기존 효과음을 음표용으로 연결했다고 가정한 시제품 검사",
+      "sourceExpectedResult": "라벨/MIDI/실제 음높이의 별도 검증 없이 청음·정확한 음높이 기능을 완료 처리하지 않음",
+      "sourceLine": 2533
+    },
+    {
+      "id": "U67",
+      "stage": "S10/S22",
+      "requirement": "on/off 입력의 표현 기호 이해와 실제 강약/음가 수행 증거 구분",
+      "status": "partial",
+      "evidence": [
+        "src/game/music/curriculum.ts: F23 assessmentDomain expression_symbol",
+        "content-unit: F23 declared example and metadata witness",
+        "src/game/music/session.ts: records declared assessmentDomain"
+      ],
+      "limits": "타건 세기·페달·발성을 측정하지 않는다. F23 실제 완료 보고서를 열어 수행 성공으로 잘못 표기되지 않는지 확인하는 전용 E2E는 없다.",
+      "relatedMT": [
+        "MT-F23"
+      ],
+      "priority": "차단",
+      "sourceInitialCondition": "단일 on/off 입력으로 다이내믹·아티큘레이션 과제를 완료",
+      "sourceExpectedResult": "기호 이해·선택·개념 시연과 실제 강약·음가 연주 증거를 구분. 측정하지 않은 타건 세기·페달 기술·발성을 성공으로 기록하지 않음",
+      "sourceLine": 2534
+    }
+  ],
+  "finalValidation": {
+    "unit": {
+      "file": "output/verification/final-unit.json",
+      "passed": 268,
+      "total": 268,
+      "failed": 0
+    },
+    "e2e": {
+      "file": "output/verification/final-e2e.json",
+      "startTime": "2026-10-16T15:36:41.365Z",
+      "duration": 42042.607,
+      "expected": 36,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0,
+      "browser": "Chromium",
+      "workers": 2,
+      "build": "production dist served by repository global setup"
+    },
+    "build": "npm run build passed, reported by root",
+    "lint": "npm run lint passed, reported by root",
+    "actualAudioOutput": "not measured through physical speakers/headphones",
+    "expertMusicReview": "not performed",
+    "longTermPerformance": "12 room-entry/exit teardown cycles are a bounded regression test, not statistical soak or memory profiling"
+  },
+  "regressionFixes": [
+    {
+      "issue": "Resume cleared a fresh movement key before the first resumed frame",
+      "fix": "MusicWorldScene clears input only when entering pause",
+      "evidence": "world-e2e immediate resume-to-movement assertion"
+    },
+    {
+      "issue": "Release then re-press between frames carried a stale jumpReleased flag into the new jump",
+      "observedBeforeFix": "Deterministic DOM keyup→keydown test observed velocityY=-175 instead of -455; repeated reachability run exposed a missed grown-body contact",
+      "fix": "A new held jump clears the previous release flag; a later release still shortens the new jump",
+      "evidence": "world-e2e deterministic same-frame input order regression: release→press=-455, press→release=-175; 12 reachability conditions still require one actual contact each",
+      "repeatVerification": "Fresh-jump regression and 12-condition reachability each repeated four times with two workers:8/8; final six world tests:6/6"
+    }
+  ]
+}

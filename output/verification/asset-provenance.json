@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "scope": "User-provided art pack reused for requested local implementation",
+  "provenance": "Sky-Sprout/Sky-Sprout-Art-Pack-v1/README.ko.md and asset-manifest.json",
+  "imageMethod": "Original pack documents built-in image generation",
+  "rights": "Local reuse requested by user; separate public redistribution license not established",
+  "audio": "Local Web Audio triangle oscillators; no external recordings",
+  "fonts": "System fonts; no downloaded font",
+  "runtimeLicenses": {
+    "react": "MIT",
+    "react-dom": "MIT",
+    "phaser": "MIT"
+  },
+  "assets": [
+    {
+      "file": "music-assets/raster/background-islands.png",
+      "source": "Sky-Sprout/Sky-Sprout-Art-Pack-v1/assets/raster/background-islands.png",
+      "sha256": "E27AEBD86E9D173176D5E3D8FA4EA71094C232858DCF5ADF37E901FB66AC102A",
+      "bytes": 2884314,
+      "sourceMatches": true
+    },
+    {
+      "file": "music-assets/raster/background-sky.png",
+      "source": "Sky-Sprout/Sky-Sprout-Art-Pack-v1/assets/raster/background-sky.png",
+      "sha256": "B4F24EAE7606CA81C23EBDAC5D78A9E5E29E386EE0C01A1A2652345C5152410C",
+      "bytes": 2460409,
+      "sourceMatches": true
+    },
+    {
+      "file": "music-assets/raster/checkpoint-lantern.png",
+      "source": "Sky-Sprout/Sky-Sprout-Art-Pack-v1/assets/raster/checkpoint-lantern.png",
+      "sha256": "1F636C0C3D93BA11E67AFE6EFF4358864CDD6512F0D0633C4910569B9994AB3E",
+      "bytes": 91748,
+      "sourceMatches": true
+    },
+    {
+      "file": "music-assets/raster/light-seed.png",
+      "source": "Sky-Sprout/Sky-Sprout-Art-Pack-v1/assets/raster/light-seed.png",
+      "sha256": "9DA59903444046864B73F7222E67F99CEAC9706700524507621DB37EAEF6D60F",
+      "bytes": 75892,
+      "sourceMatches": true
+    },
+    {
+      "file": "music-assets/raster/platform-cloud.png",
+      "source": "Sky-Sprout/Sky-Sprout-Art-Pack-v1/assets/raster/platform-cloud.png",
+      "sha256": "9E30EB26C006AC2C094ACD2CB028B0FBD0FD648446A4AAA6D51DBD1E36972B96",
+      "bytes": 223477,
+      "sourceMatches": true
+    },
+    {
+      "file": "music-assets/raster/platform-meadow.png",
+      "source": "Sky-Sprout/Sky-Sprout-Art-Pack-v1/assets/raster/platform-meadow.png",
+      "sha256": "64BB0A29F84B285212CB294E2C524426D0C54EF60589BB99E1559991BEA07E74",
+      "bytes": 790010,
+      "sourceMatches": true
+    },
+    {
+      "file": "music-assets/raster/sprout-fall.png",
+      "source": "Sky-Sprout/Sky-Sprout-Art-Pack-v1/assets/raster/sprout-fall.png",
+      "sha256": "1507BBDD6FA0EDA0A451BEE45ACC67CC1F8449E1DC461EA787BD5E6BE5648865",
+      "bytes": 79884,
+      "sourceMatches": true
+    },
+    {
+      "file": "music-assets/raster/sprout-idle.png",
+      "source": "Sky-Sprout/Sky-Sprout-Art-Pack-v1/assets/raster/sprout-idle.png",
+      "sha256": "E1611428BC47DECD51BD456762512C18E8FF2AA60740717988F08ADA81E40185",
+      "bytes": 83132,
+      "sourceMatches": true
+    },
+    {
+      "file": "music-assets/raster/sprout-jump.png",
+      "source": "Sky-Sprout/Sky-Sprout-Art-Pack-v1/assets/raster/sprout-jump.png",
+      "sha256": "C1524C37E5D19F907DA37F1317F9C1A48653CEDE0F40ED00ED04AD9570973C6C",
+      "bytes": 80202,
+      "sourceMatches": true
+    },
+    {
+      "file": "music-assets/raster/sprout-keyposes-strip.png",
+      "source": "Sky-Sprout/Sky-Sprout-Art-Pack-v1/assets/raster/sprout-keyposes-strip.png",
+      "sha256": "DAB6D74A0CD3C13A7FFB6FB73DA6717E21D8EAC829E35A64F1F8BE8869FE4144",
+      "bytes": 517963,
+      "sourceMatches": true
+    },
+    {
+      "file": "music-assets/raster/sprout-land.png",
+      "source": "Sky-Sprout/Sky-Sprout-Art-Pack-v1/assets/raster/sprout-land.png",
+      "sha256": "211F380B64350DF8AE4629B74807595E04900B9271C00A1FCB01B0C50788AFA9",
+      "bytes": 104172,
+      "sourceMatches": true
+    },
+    {
+      "file": "music-assets/raster/sprout-run-a.png",
+      "source": "Sky-Sprout/Sky-Sprout-Art-Pack-v1/assets/raster/sprout-run-a.png",
+      "sha256": "69A2F5AB7948437C3A85D2C5F5CD694BD76D0AC30E544A57168FC4176A5149F2",
+      "bytes": 84265,
+      "sourceMatches": true
+    },
+    {
+      "file": "music-assets/raster/sprout-run-b.png",
+      "source": "Sky-Sprout/Sky-Sprout-Art-Pack-v1/assets/raster/sprout-run-b.png",
+      "sha256": "6C890BD5A3C1832A62BADEFFDB3640F61EB5C868045C0C4B8289F6823FA4AE1F",
+      "bytes": 90671,
+      "sourceMatches": true
+    },
+    {
+      "file": "music-assets/raster/tile-meadow.png",
+      "source": "Sky-Sprout/Sky-Sprout-Art-Pack-v1/assets/raster/tile-meadow.png",
+      "sha256": "8D351FC28ECF714C76DD3773B1D64EBC96A645A045A3E0CCD76373FE90ACD4B4",
+      "bytes": 139092,
+      "sourceMatches": true
+    },
+    {
+      "file": "music-assets/raster/tile-rune.png",
+      "source": "Sky-Sprout/Sky-Sprout-Art-Pack-v1/assets/raster/tile-rune.png",
+      "sha256": "7078140D5AAA94E8F022425C33DCB4673DA8A54D10C3A1FCD5E2588500154769",
+      "bytes": 150849,
+      "sourceMatches": true
+    },
+    {
+      "file": "music-assets/svg/arrow-right.svg",
+      "source": "Sky-Sprout/Sky-Sprout-Art-Pack-v1/assets/svg/arrow-right.svg",
+      "sha256": "7F4AA966E9703FFA7E82266FA95AA27E1C903F6A83F0B3080D9EC1402732E8AC",
+      "bytes": 815,
+      "sourceMatches": true
+    },
+    {
+      "file": "music-assets/svg/check.svg",
+      "source": "Sky-Sprout/Sky-Sprout-Art-Pack-v1/assets/svg/check.svg",
+      "sha256": "440AC1F8714CB0603C847CBD8CB1A3B1DD1F64D6AD870D30795AC71B9462EAC8",
+      "bytes": 805,
+      "sourceMatches": true
+    },
+    {
+      "file": "music-assets/svg/jump.svg",
+      "source": "Sky-Sprout/Sky-Sprout-Art-Pack-v1/assets/svg/jump.svg",
+      "sha256": "1E4B354E0E5D525F46572124C6D92358C299EAD2E18D30426624175C957E2B0D",
+      "bytes": 813,
+      "sourceMatches": true
+    },
+    {
+      "file": "music-assets/svg/seed-icon.svg",
+      "source": "Sky-Sprout/Sky-Sprout-Art-Pack-v1/assets/svg/seed-icon.svg",
+      "sha256": "C4E678629C2B638FF5098696A91C7D78F99A7543D2D25DA39A30215769D84B00",
+      "bytes": 920,
+      "sourceMatches": true
+    }
+  ]
+}
